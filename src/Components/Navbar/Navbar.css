@@ -1,0 +1,31 @@
+.navbarcontainer{
+}
+ul{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.navbarcontainer ul li{
+    list-style-type: none;
+    float: right;
+    font-size: 24px;
+    color: white;
+    padding: 24px 16px 15px 16px;
+    cursor: pointer;
+}
+.winimage:hover{
+    color: tomato;
+}
+.wincontact:hover{
+    color: tomato;
+}
+.windoc:hover{
+    color: tomato;
+}
+.winpages:hover{
+    color: tomato;
+}
+.winhome:hover{
+    color:tomato
+}

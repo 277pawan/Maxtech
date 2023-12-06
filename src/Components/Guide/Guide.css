@@ -1,0 +1,109 @@
+.guidecontainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+    visibility: hidden;
+}
+.guidebox1{
+    height: 100vh;
+    width:50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.guidesmallbox1{
+    height: 600px;
+    width: 100%;
+    background-color:none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.guidebox1title{
+    position: relative;
+    top:-5%;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+.guideboxul{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.guideboxli{
+    padding: 10px;
+    list-style-type:numbers;
+    font-size: 22px;
+    font-family: roboto slab;
+    color: white;
+}
+.guidebutton{
+    margin: 20px;
+    padding: 20px;
+height: 80px;
+font-size: 22px;
+border-radius: 20px;
+background-color: black;
+border: 2px solid white;
+color: white;
+}
+.guidebox2{
+    height:80vh;
+    width:45%;
+    background-color: transparent;
+    padding: 50px;
+}
+.guidesmallbox2{
+    height: 750px;
+    width:100%;
+    overflow: hidden;
+}
+.guidesmallbox2 img{
+    height: 100%;
+    width: 100%;
+    /* object-fit:con; */
+}
+@media screen and (max-width:768px) {
+    .guidebox1{
+        height: 90vh;
+        width:100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .guidesmallbox1{
+        height: auto;
+        width: 100%;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .guidebox2{
+        height:90vh;
+        width:100%;
+        background-color: transparent;
+        padding: 10px;
+    }
+}

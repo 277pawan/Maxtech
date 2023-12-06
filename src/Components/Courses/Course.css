@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Lora:ital@1&family=PT+Serif&family=Rasa:ital,wght@1,700&family=Roboto+Slab&family=Satisfy&family=Viga&family=Vollkorn&display=swap');
+.coursecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10% 100px 100px 100px;
+    position: relative;
+}
+.coursetitle{
+    position: absolute;
+    display: block;
+    top:0;
+    font-family:auto;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 2.5%;
+    font-size: 3rem;
+}
+.coursebox1{
+    height: auto;
+    width: 400px;
+    background-color:  rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+
+}
+
+.courseimage1 img{
+    height: 200px;
+    width: 200px;
+}
+.courseimage2 img{
+    height: 200px;
+    width: 200px;
+}.courseimage3 img{
+    height: 200px;
+    width: 200px;
+}.courseimage4 img{
+    height: 200px;
+    width: 200px;
+}.courseimage5 img{
+    height: 200px;
+    width: 200px;
+}.courseimage6 img{
+    height: 200px;
+    width: 200px;
+}
+.webtitle{
+    font-size: 30px;
+    font-family: roboto slab;
+}
+.webdesc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 20px;
+    font-family: pt serif;
+    padding: 15px 2px 30px 2px;
+}
+.coursebox2{
+    height: auto;
+    width: 400px;
+    background-color: rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+
+}
+.coursebox3{
+    height: auto;
+    width: 400px;
+    background-color:  rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+
+}
+.coursebox4{
+    height: auto;
+    width: 400px;
+    background-color:  rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+
+}
+.coursebox5{
+    height: auto;
+    width: 400px;
+    background-color:  rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.coursebox6{
+    height: auto;
+    width: 400px;
+    background-color:  rgb(246, 248, 250);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.coursebox1:hover,
+.coursebox2:hover,
+.coursebox3:hover,
+.coursebox4:hover,
+.coursebox5:hover,
+.coursebox6:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:  18px 18px 36px #b9babc,
+    -18px -18px 36px #ffffff;
+}
+@media screen and (max-width:768px){
+    .coursecontainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+        padding:35% 0px 0px 0px
+    } 
+    .coursetitle{
+        position: absolute;
+        display: block;
+        top:0;
+        padding: 20px;
+        font-size: 30px;
+        margin: 6%;
+    }
+}

@@ -1,0 +1,20 @@
+.defaultcontainer{
+    height: 90vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.defaulttitle{
+    font-size: 100px;
+    font-weight: 600;
+    color:tomato;
+}
+.defaultdesc{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: black;
+}

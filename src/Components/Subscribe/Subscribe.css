@@ -1,0 +1,64 @@
+.subscribecontainer{
+    height: 800px;
+    width:100%;
+    background: linear-gradient(56deg,rgba(10, 14, 113, 0.512),rgba(30, 34, 142, 0.518),rgba(24, 27, 105, 0.485)), url('../../Assets/laptop.png');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center; 
+    justify-content: center;
+}
+.subscribebox{
+height: 500px;
+width: 100%;
+background-color: transparent;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.subscribetitle{
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.subscribedesc{
+    font-size: 30px;
+    font-family: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.subscribebutton button{
+    height: 80px;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.subscribebutton button:hover{
+    height: 80px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
