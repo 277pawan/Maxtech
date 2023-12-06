@@ -25,7 +25,7 @@ function Navbar() {
             style={{
               float: "left",
               fontSize: "30px",
-              padding: "9px 10px 13px 9px",
+              padding: "9px 10px 9px 9px",
               fontWeight: "600",
             }}
           >
