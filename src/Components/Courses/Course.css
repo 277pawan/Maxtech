@@ -54,7 +54,7 @@
     width: 200px;
 }
 .webtitle{
-    font-size: 30px;
+    font-size: 28px;
     font-family: roboto slab;
 }
 .webdesc{
@@ -62,9 +62,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: pt serif;
-    padding: 15px 2px 30px 2px;
+    padding: 14px 2px 28px 2px;
 }
 .coursebox2{
     height: auto;
