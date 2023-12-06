@@ -30,7 +30,7 @@
 }
 .headerh1{
     width: 70%;
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     color: black;
@@ -40,7 +40,7 @@
 .headerdesc{
     width: 70%;
     padding: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 600;
     text-transform: capitalize;
@@ -54,7 +54,7 @@
     height: 70px;
     width: 200px;
     margin: 20px;
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
