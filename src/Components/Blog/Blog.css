@@ -32,8 +32,8 @@
     color: tomato;
 }
 .blogbox2{
-    height: 750px;
-    width: 580px;
+    height: 700px;
+    width: 4500px;
     background-color: transparent;
 }
 .blogbox2 img{
@@ -57,8 +57,8 @@
 }
 
 .blogbox3{
-    height: 750px;
-    width: 600px;
+    height: 650px;
+    width: 500px;
     background-color: transparent;
     position: relative;
     visibility: hidden;
@@ -95,8 +95,8 @@
 }
 
 .blogbox4{
-    height: 750px;
-    width: 580px;
+    height: 680px;
+    width: 450px;
     background-color: transparent;
 }
 .blogbox4 img{

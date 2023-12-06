@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
-    padding: 10% 40px 100px 40px;
+    padding: 10% 42px 100px 42px;
     position: relative;
 }
 .coursetitle{
@@ -20,7 +20,7 @@
 }
 .coursebox1{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color:  rgb(246, 248, 250);
     margin: 30px;
     display: flex;
@@ -68,7 +68,7 @@
 }
 .coursebox2{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color: rgb(246, 248, 250);
     margin: 30px;
     display: flex;
@@ -82,7 +82,7 @@
 }
 .coursebox3{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color:  rgb(246, 248, 250);
     margin: 30px;
     display: flex;
@@ -96,7 +96,7 @@
 }
 .coursebox4{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color:  rgb(246, 248, 250);
     margin: 30px;
     display: flex;
@@ -110,7 +110,7 @@
 }
 .coursebox5{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color:  rgb(246, 248, 250);
     margin: 30px;
     display: flex;
@@ -123,7 +123,7 @@
 }
 .coursebox6{
     height: auto;
-    width: 400px;
+    width: 350px;
     background-color:  rgb(246, 248, 250);
     margin: 30px;
     display: flex;
