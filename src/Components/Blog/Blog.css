@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-evenly;
     background: url("../../Assets/blogbackground.jpg");
     background-size: cover;
