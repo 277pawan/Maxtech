@@ -1,5 +1,5 @@
 .subscribecontainer{
-    height: 800px;
+    height: auto;
     width:100%;
     background: linear-gradient(56deg,rgba(10, 14, 113, 0.512),rgba(30, 34, 142, 0.518),rgba(24, 27, 105, 0.485)), url('../../Assets/laptop.png');
     background-size: cover;
