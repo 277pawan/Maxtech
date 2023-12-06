@@ -75,16 +75,16 @@
     background-color: transparent;
 }
 .boy{
-    height: 660px;
-    width: 500px;
+    height: 600px;
+    width: 450px;
     position: absolute;
     right: 0%;
     top: -100%;
     object-fit: cover;
 }
 .girl{
-    height: 660px;
-    width: 500px;
+    height: 600px;
+    width: 450px;
     position: absolute;
     top:100%;
     object-fit: cover;

@@ -24,8 +24,8 @@ function Navbar() {
           <li
             style={{
               float: "left",
-              fontSize: "35px",
-              padding: "15px 10px 15px 10px",
+              fontSize: "30px",
+              padding: "14px 10px 14px 10px",
               fontWeight: "600",
             }}
           >

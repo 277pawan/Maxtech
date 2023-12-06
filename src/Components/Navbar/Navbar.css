@@ -9,7 +9,7 @@ ul{
 .navbarcontainer ul li{
     list-style-type: none;
     float: right;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     padding: 24px 16px 15px 16px;
     cursor: pointer;
