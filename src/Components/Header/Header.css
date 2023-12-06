@@ -76,7 +76,7 @@
 }
 .boy{
     height: 600px;
-    width: 450px;
+    width: 300px;
     position: absolute;
     right: 0%;
     top: -100%;
@@ -84,7 +84,7 @@
 }
 .girl{
     height: 600px;
-    width: 450px;
+    width: 300px;
     position: absolute;
     top:100%;
     object-fit: cover;
