@@ -22,7 +22,7 @@
     height: auto;
     width: 350px;
     background-color:  rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,27 +34,27 @@
 }
 
 .courseimage1 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }
 .courseimage2 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }.courseimage3 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }.courseimage4 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }.courseimage5 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }.courseimage6 img{
-    height: 180px;
-    width: 200px;
+    height: 150px;
+    width: 180px;
 }
 .webtitle{
-    font-size: 28px;
+    font-size: 24px;
     font-family: roboto slab;
 }
 .webdesc{
@@ -70,7 +70,7 @@
     height: auto;
     width: 350px;
     background-color: rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@
     height: auto;
     width: 350px;
     background-color:  rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -98,7 +98,7 @@
     height: auto;
     width: 350px;
     background-color:  rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,7 +112,7 @@
     height: auto;
     width: 350px;
     background-color:  rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -125,7 +125,7 @@
     height: auto;
     width: 350px;
     background-color:  rgb(246, 248, 250);
-    margin: 30px;
+    margin: 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
