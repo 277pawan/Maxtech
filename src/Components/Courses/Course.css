@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Itim&family=Lora:ital@1&family=PT+Serif&family=Rasa:ital,wght@1,700&family=Roboto+Slab&family=Satisfy&family=Viga&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=PT+Serif&family=Roboto&family=Vollkorn&display=swap');
 .coursecontainer{
     display: flex;
     flex-direction: row;
@@ -19,12 +19,13 @@
     font-size: 2.8rem;
 }
 .coursebox1{
-    height: 280px;
-    width: 320px;
+    height: 250px;
+    width: 300px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -35,39 +36,34 @@
 }
 
 .courseimage1 img{
-    padding: 20px;
     height: 130px;
     width: 130px;
 }
 .courseimage2 img{
-    padding: 20px;
     height: 130px;
     width: 130px;
 }.courseimage3 img{
-    padding: 20px;
     height: 130px;
     width: 130px;
 }.courseimage4 img{
-    padding: 20px;
     height: 130px;
     width: 130px;
 }.courseimage5 img{
-    padding: 20px;
     height: 130px;
     width:130px;
 }.courseimage6 img{
-    padding: 20px;
     height: 130px;
     width: 130px;
 }
 .webtitle{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"roboto";
 }
 .coursebox2{
     height: 280px;
     width: 320px;
+    justify-content: center;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
     border-radius: 50%;
@@ -83,6 +79,7 @@
 .coursebox3{
     height: 280px;
     width: 320px;
+    justify-content: center;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
     border-radius: 50%;
@@ -104,6 +101,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
@@ -120,6 +118,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
@@ -134,6 +133,7 @@
     border-radius: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     box-shadow:  5px 5px 16px #b9babc,
