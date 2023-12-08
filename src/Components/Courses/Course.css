@@ -19,10 +19,11 @@
     font-size: 2.8rem;
 }
 .coursebox1{
-    height: auto;
-    width: 350px;
+    height: 280px;
+    width: 320px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,43 +35,42 @@
 }
 
 .courseimage1 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width: 130px;
 }
 .courseimage2 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width: 130px;
 }.courseimage3 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width: 130px;
 }.courseimage4 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width: 130px;
 }.courseimage5 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width:130px;
 }.courseimage6 img{
-    height: 150px;
-    width: 180px;
+    padding: 20px;
+    height: 130px;
+    width: 130px;
 }
 .webtitle{
     font-size: 24px;
-    font-family: roboto slab;
-}
-.webdesc{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 18px;
-    font-family: pt serif;
-    padding: 14px 2px 28px 2px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .coursebox2{
-    height: auto;
-    width: 350px;
-    background-color: rgb(246, 248, 250);
+    height: 280px;
+    width: 320px;
+    background-color:  rgb(246, 248, 250);
     margin: 28px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -81,10 +81,11 @@
 
 }
 .coursebox3{
-    height: auto;
-    width: 350px;
+    height: 280px;
+    width: 320px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,10 +96,27 @@
 
 }
 .coursebox4{
-    height: auto;
-    width: 350px;
+    height: 280px;
+    width: 320px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow:  5px 5px 16px #b9babc,
+    -5px -5px 16px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+
+
+}
+.coursebox5{
+    height: 280px;
+    width: 320px;
+    background-color:  rgb(246, 248, 250);
+    margin: 28px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -108,24 +126,12 @@
     transition: box-shadow 0.5s ease-in-out;
 
 }
-.coursebox5{
-    height: auto;
-    width: 350px;
-    background-color:  rgb(246, 248, 250);
-    margin: 28px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    box-shadow:  5px 5px 16px #b9babc,
-    -5px -5px 16px #ffffff;
-    transition: box-shadow 0.5s ease-in-out;
-}
 .coursebox6{
-    height: auto;
-    width: 350px;
+    height: 280px;
+    width: 320px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -133,6 +139,7 @@
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
     transition: box-shadow 0.5s ease-in-out;
+
 }
 .coursebox1:hover,
 .coursebox2:hover,
@@ -141,9 +148,8 @@
 .coursebox5:hover,
 .coursebox6:hover {
     background-color: aliceblue;
-    border-radius: 10px;
     cursor: pointer;
-    box-shadow:  18px 18px 36px #b9babc,
+    box-shadow:  8px 8px 36px #b9babc,
     -18px -18px 36px #ffffff;
 }
 @media screen and (max-width:768px){

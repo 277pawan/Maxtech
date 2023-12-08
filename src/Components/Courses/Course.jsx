@@ -153,66 +153,36 @@ function Course() {
           <img src={websecurity} alt="websecurity"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
       <div ref={hardwareref} className="coursebox2">
         <div className="courseimage2">
           <img src={hardware} alt="hardware"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
       <div ref={webdeveloperref} className="coursebox3">
         <div className="courseimage3">
           <img src={webdeveloper} alt="webdeveloper"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
       <div ref={javaref} className="coursebox4">
         <div className="courseimage4">
           <img src={java} alt="java"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
       <div ref={cref} className="coursebox5">
         <div className="courseimage5">
           <img src={c} alt="C++"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
       <div ref={cybersecurityref} className="coursebox6">
         <div className="courseimage6">
           <img src={cybersecruity} alt="cybersecurity"></img>
         </div>
         <div className="webtitle">Web Security</div>
-        <div className="webdesc">
-          "In every challenge lies an opportunity for growth. Embrace
-          difficulties as stepping stones toward success, and let each obstacle
-          fuel your determination."
-        </div>
       </div>
     </div>
   );
