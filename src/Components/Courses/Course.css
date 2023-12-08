@@ -23,9 +23,9 @@
     width: 300px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 50%;
+    border-radius: 15%;
     display: flex;
-    border:3px solid rgb(187, 223, 255);
+    border:1px solid rgb(187, 223, 255);
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -65,10 +65,10 @@
     height: 250px;
     width: 300px;
     justify-content: center;
-    border:3px solid rgb(187, 223, 255);
+    border:1px solid rgb(187, 223, 255);
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 100%;
+    border-radius: 15%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -84,12 +84,12 @@
     justify-content: center;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 50%;
+    border-radius: 15%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border:3px solid rgb(187, 223, 255);
+    border:1px solid rgb(187, 223, 255);
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
     transition: box-shadow 0.5s ease-in-out;
@@ -100,12 +100,12 @@
     width: 300px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 50%;
+    border-radius: 15%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    border:3px solid rgb(187, 223, 255);
+    border:1px solid rgb(187, 223, 255);
     align-items: center;
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
@@ -118,13 +118,13 @@
     width: 300px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 50%;
+    border-radius: 15%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border:3px solid rgb(187, 223, 255);
+    border:1px solid rgb(187, 223, 255);
     box-shadow:  5px 5px 16px #b9babc,
     -5px -5px 16px #ffffff;
     transition: box-shadow 0.5s ease-in-out;
@@ -135,8 +135,8 @@
     width: 300px;
     background-color:  rgb(246, 248, 250);
     margin: 28px;
-    border-radius: 50%;
-    border:3px solid rgb(187, 223, 255);
+    border-radius: 15%;
+    border:1px solid rgb(187, 223, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
