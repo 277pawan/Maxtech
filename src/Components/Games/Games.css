@@ -19,14 +19,14 @@
     font-family:Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
-    padding-top: 43px;
+    padding-top: 35px;
 }
 .gamefirstdesc{
     font-size: 30px;
     font-family: auto;
     color: white;
     text-align: center;
-    padding-bottom: 43px;
+    padding-bottom: 35px;
 }
 .gamesecondbox{
     height:auto;
@@ -41,8 +41,8 @@
     align-items: center;
 }
 .gamesecondbox1{
-    height: 400px;
-    width: 500px;
+    height: 350px;
+    width: 400px;
     background: url('../../Assets/typingimage.png');
     background-repeat: round;
     background-size: cover;
@@ -54,10 +54,12 @@
     align-items: center;
 }
 .gamesecondbox1 div{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 40px;
+    text-align: center;
+
 }
 .gamesecondbox1 button{
     border-radius: 10px;
@@ -70,8 +72,8 @@
 }
 
 .gamesecondbox2{
-    height: 400px;
-    width: 500px;
+    height: 350px;
+    width: 400px;
     background-color: royalblue;
     background: url('../../Assets/tictactoe.png');
     background-repeat: round;
@@ -84,10 +86,11 @@
     align-items: center;
 }
 .gamesecondbox2 div{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
+    text-align: center;
 }
 .gamesecondbox2 button{
     border-radius: 10px;
