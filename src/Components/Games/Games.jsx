@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Games.css";
 import { Link } from "react-router-dom";
+import { gsap, Power2 } from "gsap";
 function Games() {
+  const firstbox = useRef(null);
+  const secondbox = useRef(null);
+  useEffect(() => {
+    let t1 = new gsap.timeline();
+    t1.to(firstbox.current, 1, {
+      opacity: 0.75,
+      transform: "translate(0%)",
+      delay: 0.2,
+    }).to(
+      secondbox.current,
+      1,
+      {
+        opacity: 0.75,
+        transform: "translate(0%)",
+        delay: 0.3,
+      },
+      0.1
+    );
+  }, []);
   return (
     <div className="gamescontainer">
       <div className="gamefirstbox">
@@ -11,11 +31,11 @@ function Games() {
         </div>
       </div>
       <div className="gamesecondbox">
-        <div className="gamesecondbox1">
+        <div ref={firstbox} className="gamesecondbox1">
           <div>Typewriter Game</div>
           <button>Start Game</button>
         </div>
-        <div className="gamesecondbox2">
+        <div ref={secondbox} className="gamesecondbox2">
           {" "}
           <div>Tic-Tac-Toe</div>
           <Link to="/Tictac">
