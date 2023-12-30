@@ -102,7 +102,12 @@ function Tictac() {
       </div>
       <div>
         <abbr title="Restart">
-          <img src={restart} alt="Restart button" onClick={restartgame}></img>
+          <img
+            className="restartimage"
+            src={restart}
+            alt="Restart button"
+            onClick={restartgame}
+          ></img>
         </abbr>
       </div>
     </div>

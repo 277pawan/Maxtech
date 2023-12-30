@@ -35,13 +35,15 @@
     background-color: blue;
     display: flex;
 }
-img{
+.restartimage{
     height: 100px;
     width: 100px;
-    animation: rotate 1s infinite ease;
+    animation-name: restart;
+    animation-duration:1s ;
+    animation-iteration-count: infinite;
     cursor: pointer;
 }
-@keyframes rotate {
+@keyframes restart {
     from{
         transform: rotate(0deg);
     }
