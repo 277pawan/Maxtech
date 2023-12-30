@@ -1,0 +1,11 @@
+.tacfield{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(188, 255, 252);
+    border: 2px inset black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bolder;
+}

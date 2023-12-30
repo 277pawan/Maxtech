@@ -11,6 +11,7 @@ import Default from './Components/Default/Default';
 import Landing from './Components/Landingpage/Landing';
 import { useEffect, useState } from 'react';
 import Games from './Components/Games/Games';
+import Tictac from './Components/Tictactoe/Tictac';
 
 function App() {
   const [landing, setlanding] = useState(true);
@@ -35,6 +36,7 @@ function App() {
               <Footer />
             </>}></Route>
             <Route path='/Games' element={<Games />}></Route>
+            <Route path='/Tictac' element={<Tictac />}></Route>
             <Route path='*' element={<Default />}></Route>
           </Routes>
         </BrowserRouter>

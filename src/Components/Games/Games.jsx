@@ -1,5 +1,6 @@
 import React from "react";
 import "./Games.css";
+import { Link } from "react-router-dom";
 function Games() {
   return (
     <div className="gamescontainer">
@@ -17,7 +18,9 @@ function Games() {
         <div className="gamesecondbox2">
           {" "}
           <div>Tic-Tac-Toe</div>
-          <button>Start Game</button>
+          <Link to="/Tictac">
+            <button>Start Game</button>
+          </Link>
         </div>
       </div>
     </div>

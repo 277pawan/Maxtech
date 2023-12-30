@@ -1,0 +1,53 @@
+.taccontainer{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tacbox{
+    height: 302px;
+    width: 300px;
+    background-color: black;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.tacrow1{
+    height: 100px;
+    width: 300px;
+    background-color: blueviolet;
+    display: flex;
+}
+.tacrow2{
+    height: 100px;
+    width: 300px;
+    background-color:greenyellow;
+    display: flex;
+}
+.tacrow3{
+    height: 100px;
+    width: 300px;
+    background-color: blue;
+    display: flex;
+}
+img{
+    height: 100px;
+    width: 100px;
+    animation: rotate 1s infinite ease;
+    cursor: pointer;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
