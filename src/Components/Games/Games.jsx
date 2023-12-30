@@ -9,7 +9,17 @@ function Games() {
           Your Ultimate destination for interactive games.
         </div>
       </div>
-      <div className="gamesecondbox"></div>
+      <div className="gamesecondbox">
+        <div className="gamesecondbox1">
+          <div>Typewriter Game</div>
+          <button>Start Game</button>
+        </div>
+        <div className="gamesecondbox2">
+          {" "}
+          <div>Tic-Tac-Toe</div>
+          <button>Start Game</button>
+        </div>
+      </div>
     </div>
   );
 }
