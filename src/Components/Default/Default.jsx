@@ -5,7 +5,7 @@ function Default() {
     <div className="defaultcontainer">
       <div className="defaulttitle">Oops! Error 404</div>
       <div className="defaultdesc">
-        Get Lost you asshole go back to the home page.
+        Sorry! For inconvinence go back to the home page.
       </div>
     </div>
   );

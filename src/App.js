@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Default from './Components/Default/Default';
 import Landing from './Components/Landingpage/Landing';
 import { useEffect, useState } from 'react';
+import Games from './Components/Games/Games';
 
 function App() {
   const [landing, setlanding] = useState(true);
@@ -33,6 +34,7 @@ function App() {
               <Subscribe />
               <Footer />
             </>}></Route>
+            <Route path='/Games' element={<Games />}></Route>
             <Route path='*' element={<Default />}></Route>
           </Routes>
         </BrowserRouter>

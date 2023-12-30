@@ -15,8 +15,8 @@ function Navbar() {
           <Link to="/doc">
             <li className="windoc">Documentation</li>
           </Link>
-          <Link to="/Page">
-            <li className="winpages">Pages</li>
+          <Link to="/Games">
+            <li className="winpages">Games</li>
           </Link>
           <Link to="home">
             <li className="winhome">Home</li>
