@@ -8,6 +8,7 @@ function Tictac() {
   const [toogle, settoogle] = useState(true);
   const [winnertoogle, setwinnertoogle] = useState(false);
   const [winnervalue, setwinnervalue] = useState();
+  const [rotate, setrotate] = useState(false);
 
   function tooglehandle(index) {
     const updatedvalue = [...value];
@@ -55,6 +56,10 @@ function Tictac() {
     return false;
   }
   function restartgame() {
+    setrotate(true);
+    setTimeout(() => {
+      setrotate(false);
+    }, 1000);
     setvalue(Array(9).fill(null));
     setwinnertoogle(false);
     setwinnervalue();
@@ -83,19 +88,55 @@ function Tictac() {
         ) : (
           <>
             <div className="tacrow1">
-              <Tacbox value={value[0]} tooglevalue={() => tooglehandle(0)} />
-              <Tacbox value={value[1]} tooglevalue={() => tooglehandle(1)} />
-              <Tacbox value={value[2]} tooglevalue={() => tooglehandle(2)} />
+              <Tacbox
+                toogle={toogle}
+                value={value[0]}
+                tooglevalue={() => tooglehandle(0)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[1]}
+                tooglevalue={() => tooglehandle(1)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[2]}
+                tooglevalue={() => tooglehandle(2)}
+              />
             </div>
             <div className="tacrow2">
-              <Tacbox value={value[3]} tooglevalue={() => tooglehandle(3)} />
-              <Tacbox value={value[4]} tooglevalue={() => tooglehandle(4)} />
-              <Tacbox value={value[5]} tooglevalue={() => tooglehandle(5)} />
+              <Tacbox
+                toogle={toogle}
+                value={value[3]}
+                tooglevalue={() => tooglehandle(3)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[4]}
+                tooglevalue={() => tooglehandle(4)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[5]}
+                tooglevalue={() => tooglehandle(5)}
+              />
             </div>
             <div className="tacrow3">
-              <Tacbox value={value[6]} tooglevalue={() => tooglehandle(6)} />
-              <Tacbox value={value[7]} tooglevalue={() => tooglehandle(7)} />
-              <Tacbox value={value[8]} tooglevalue={() => tooglehandle(8)} />
+              <Tacbox
+                toogle={toogle}
+                value={value[6]}
+                tooglevalue={() => tooglehandle(6)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[7]}
+                tooglevalue={() => tooglehandle(7)}
+              />
+              <Tacbox
+                toogle={toogle}
+                value={value[8]}
+                tooglevalue={() => tooglehandle(8)}
+              />
             </div>
           </>
         )}
@@ -103,13 +144,14 @@ function Tictac() {
       <div>
         <abbr title="Restart">
           <img
-            className="restartimage"
+            className={`restartimage ${rotate ? "round" : ""}`}
             src={restart}
             alt="Restart button"
             onClick={restartgame}
           ></img>
         </abbr>
       </div>
+      <div></div>
     </div>
   );
 }

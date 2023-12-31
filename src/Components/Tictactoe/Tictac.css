@@ -38,10 +38,12 @@
 .restartimage{
     height: 100px;
     width: 100px;
+    cursor: pointer;
+}
+.round{
     animation-name: restart;
     animation-duration:1s ;
     animation-iteration-count: infinite;
-    cursor: pointer;
 }
 @keyframes restart {
     from{
