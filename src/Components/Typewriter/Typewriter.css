@@ -1,0 +1,21 @@
+.typecontainer {
+    height: calc(100vh - 50px);
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.typenav {
+    background-color: #3498db; /* Example color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.typecontent, .typebox3 {
+    height: 100px; /* Set a fixed height for the other two boxes */
+    background-color: #2ecc71; /* Example color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

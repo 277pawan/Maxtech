@@ -33,7 +33,9 @@ function Games() {
       <div className="gamesecondbox">
         <div ref={firstbox} className="gamesecondbox1">
           <div>Typewriter Game</div>
-          <button>Start Game</button>
+          <Link to="/Typewriter">
+            <button>Start Game</button>
+          </Link>
         </div>
         <div ref={secondbox} className="gamesecondbox2">
           {" "}
