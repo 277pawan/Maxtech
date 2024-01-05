@@ -1,21 +1,117 @@
 .typecontainer {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     background-color: red;
     display: flex;
     flex-direction: column;
 }
 
 .typenav {
-    background-color: #3498db; /* Example color */
+    background-color: #3498db;
+    height: 100px;
     color: #fff;
     text-align: center;
-    padding: 20px;
 }
 
-.typecontent, .typebox3 {
-    height: 100px; /* Set a fixed height for the other two boxes */
-    background-color: #2ecc71; /* Example color */
+.typebox{
+    height: auto;
+    background-color: #2ecc71;
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    overflow: visible;
+}
+.typespace{
+    height: auto;
+    width: 100%;
+    background-color: skyblue;
+}
+.typecontent{
+    height: 150px;
     padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 14px;
+    font-size: 32px;
+    text-indent: 10px;
+    overflow: scroll;
+    color:black;
+}
+.cursor{
+    border-left: 3px solid black;
+    height: 10px;
+}
+.typecontent::-webkit-scrollbar{
+    width: 0;
+}
+.sucesscolor{
+    color: rgb(132, 255, 107);
+}
+.errorcolor{
+    color:white;
+}
+.typebox div{
+    padding: 40px;
+}
+.typebox div input[type="text"]{
+ font-size: 24px;
+ background-color: black;
+ color: white;
+ border: 3px inset rgb(255, 255, 255);
+ height: 64px;
+ width: 80%;
+ border-radius: 14px;
+}
+.typebuttons{
+    height: 100px;
+    width: 100%;
+    background:linear-gradient(45deg ,red,violet,pink,green,orange,white);
+}
+@media screen and (max-width:768px) {
+    .typebox{
+        height: auto;
+        background-color: #2ecc71;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        overflow: visible;
+    }
+    .typespace{
+        height: auto;
+        width: 100%;
+        background-color: skyblue;
+    }
+    .typecontent{
+        height: 150px;
+        padding: 10px;
+        letter-spacing: 2px;
+        font-size: 30px;
+        overflow: hidden;
+    }
+    .typecontent::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    .typebox div{
+        padding: 24px;
+    }
+    .typebox div input[type="string"]{
+     font-size: 24px;
+     background-color: black;
+     color: white;
+     border: 2px solid black;
+     height: 64px;
+     width: 80%;
+     border-radius: 14px;
+    }
+    .typebuttons{
+        height: 100px;
+        width: 100%;
+        background:linear-gradient(45deg ,red,violet,pink,green,orange,white);
+    } 
 }
