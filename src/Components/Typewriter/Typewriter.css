@@ -1,12 +1,12 @@
 .typecontainer {
     height: calc(100vh - 60px);
-    background-color: red;
+    background-color: rgb(204, 214, 218);
     display: flex;
     flex-direction: column;
 }
 
 .typenav {
-    background-color: #3498db;
+    background-color:rgb(204, 214, 218);
     height: 80px;
     color: #fff;
     text-align: center;
@@ -14,7 +14,7 @@
 
 .typebox{
     height: auto;
-    background-color: #2ecc71;
+    background-color:rgb(204, 214, 218);
     color: #fff;
     text-align: center;
     display: flex;
@@ -27,7 +27,8 @@
 .typespace{
     height: auto;
     width: 100%;
-    background-color: skyblue;
+    border-radius: 20px;
+    background-color:rgb(242, 251, 255);
 }
 .typecontent{
     height: 150px;
@@ -37,10 +38,10 @@
     font-size: 32px;
     text-indent: 10px;
     overflow: scroll;
-    color:white;
+    color:black;
 }
 .cursor{
-    border-left: 3px solid black;
+    border-left: 4px solid black;
     height: 10px;
     animation-name: cursorping;
     animation-duration: 1s;
@@ -63,26 +64,32 @@
 }
 .sucesscolor{
     color:black;
+    font-weight: bolder;
 }
 .errorcolor{
-    color:white;
+    color:black;
 }
 .typebox div{
     padding: 30px;
 }
 .typebox div input[type="text"]{
- font-size: 24px;
- background-color: black;
- color: white;
+ font-size: 26px;
+ font-weight: 600;
+ background-color:rgb(204, 214, 218);
+ color:darkblue;
  border: 3px inset rgb(255, 255, 255);
  height: 64px;
  width: 80%;
  border-radius: 14px;
+ caret-color: darkblue;
+}
+.typebox div input::placeholder{
+    color: darkblue;
 }
 .typebuttons{
-    height: 100px;
+    height: 80px;
     width: 100%;
-    background:linear-gradient(45deg ,red,violet,pink,green,orange,white);
+    background-color: rgb(204, 214, 218);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 @media screen and (max-width:768px) {
     .typebox{
