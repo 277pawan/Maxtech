@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Typewriter.css";
+import restart from "../../Assets/restart.png";
 
 function Typewriter() {
   const array = [
@@ -13,54 +14,57 @@ function Typewriter() {
   const [value, setvalue] = useState("");
   const [match, setmatch] = useState([]);
   const [cursorpos, setcursorpos] = useState(0);
-
+  const [contentpos, setcontentpos] = useState(0);
+  const [isHovered, setishovered] = useState(false);
   function contenthandle() {
-    let current = currentIndex;
-    if (currentIndex > array.length - 1) {
-      current = 0;
-    } else {
-      current++;
-      if (current === 3) {
-        current = 0;
+    let currentcontentpos = contentpos;
+    if (currentcontentpos < array.length) {
+      currentcontentpos = currentcontentpos + 1;
+      setcontentpos(currentcontentpos);
+      if (currentcontentpos > 2) {
+        currentcontentpos = 0;
+        setcontentpos(currentcontentpos);
       }
     }
-    setCurrentIndex(current);
   }
-  useEffect(() => {
-    setInputText(array[currentIndex]);
-    setmatch(new Array(array[currentIndex].length).fill(null));
-  }, [currentIndex]);
-  const handlechecker = (e) => {
+  function handlechecker(e) {
     const ans = e.target.value;
-    const content = array[currentIndex];
+    const contentans = array[contentpos];
     const newmatch = [];
     for (let i = 0; i < ans.length; i++) {
-      if (ans[i] === content[i]) {
+      if (ans[i] === contentans[i]) {
+        console.log(true);
         newmatch.push(true);
       } else {
+        console.log(false);
         newmatch.push(false);
       }
     }
-    setmatch(newmatch);
     setcursorpos(ans.length);
-    console.log(cursorpos);
-  };
+    setmatch(newmatch);
+  }
   return (
     <div className="typecontainer">
       <div className="typenav"></div>
       <div className="typebox">
         <div className="typespace">
           <div className="typecontent">
-            {inputText.split("").map((letter, index) => (
-              <React.Fragment key={index}>
-                {index === cursorpos && <span className="cursor"></span>}
-                <span
-                  className={`${match[index] ? "successcolor" : "errorcolor"}`}
-                >
-                  {letter}
-                </span>
-              </React.Fragment>
-            ))}
+            {array[contentpos]
+              .split("")
+              .slice(0, array[contentpos].length)
+              .map((letter, index) => (
+                <React.Fragment>
+                  <span
+                    className={`${index === cursorpos ? "cursor" : ""}`}
+                  ></span>
+                  <span
+                    key={index}
+                    className={`${match[index] ? "sucesscolor" : "errorcolor"}`}
+                  >
+                    {letter}
+                  </span>
+                </React.Fragment>
+              ))}
           </div>
           <div>
             <input
@@ -72,8 +76,19 @@ function Typewriter() {
         </div>
       </div>
       <div className="typebuttons">
-        {value}
-        <button onClick={contenthandle}>click here</button>
+        <img
+          className="restartimg"
+          src={restart}
+          alt="Restart Image"
+          onClick={contenthandle}
+          onMouseEnter={() => setishovered(true)}
+          onMouseLeave={() => setishovered(false)}
+        ></img>
+        {isHovered && (
+          <div className="hover-box">
+            <p>Restart Button </p>
+          </div>
+        )}
       </div>
     </div>
   );

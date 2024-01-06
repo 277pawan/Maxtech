@@ -37,17 +37,32 @@
     font-size: 32px;
     text-indent: 10px;
     overflow: scroll;
-    color:black;
+    color:white;
 }
 .cursor{
     border-left: 3px solid black;
     height: 10px;
+    animation-name: cursorping;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes cursorping {
+    100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 .typecontent::-webkit-scrollbar{
     width: 0;
 }
 .sucesscolor{
-    color: rgb(132, 255, 107);
+    color:black;
 }
 .errorcolor{
     color:white;
@@ -68,6 +83,27 @@
     height: 100px;
     width: 100%;
     background:linear-gradient(45deg ,red,violet,pink,green,orange,white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restartimg{
+    height: 100px;
+    width: 100px;
+}
+.hover-box{
+    height: 50px;
+    width:auto;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color:transparent;
+    color: white;
+    position: absolute;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width:768px) {
     .typebox{
