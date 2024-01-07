@@ -6,10 +6,48 @@
 }
 
 .typenav {
-    background-color:rgb(204, 214, 218);
+    background-color: rgb(204, 214, 218);
     height: 80px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wordsbox1{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 24px;
     text-align: center;
+    background-color: black;
+}
+.wordsbox2{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+}
+.wordsbox3{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+}
+.wordsbox4{
+    height: 40px;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    background-color: black;
 }
 
 .typebox{

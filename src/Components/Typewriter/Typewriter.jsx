@@ -17,15 +17,18 @@ function Typewriter() {
   const [cursorpos, setcursorpos] = useState(0);
   const [contentpos, setcontentpos] = useState(0);
   const [isHovered, setishovered] = useState(false);
-  const inputref = useRef(null);
   function contenthandle() {
     let currentcontentpos = contentpos;
     if (currentcontentpos < array.length) {
       currentcontentpos = currentcontentpos + 1;
       setcontentpos(currentcontentpos);
+      setmatch([]);
+      setcursorpos(0);
       if (currentcontentpos > array.length - 1) {
         currentcontentpos = 0;
         setcontentpos(currentcontentpos);
+        setmatch([]);
+        setcursorpos(0);
       }
     }
   }
@@ -67,10 +70,15 @@ function Typewriter() {
     return () => {
       window.removeEventListener("keypress", handleKeyPress);
     };
-  }, [contentpos, match]);
+  }, [match]);
   return (
     <div className="typecontainer">
-      <div className="typenav"></div>
+      <div className="typenav">
+        <div className="wordsbox1">Words</div>
+        <div className="wordsbox2">10</div>
+        <div className="wordsbox3">40</div>
+        <div className="wordsbox4">100</div>
+      </div>
       <div className="typebox">
         <div className="typespace">
           <div className="typecontent">
