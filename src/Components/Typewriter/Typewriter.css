@@ -1,10 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Gugi&family=Gurajada&display=swap');
 .typecontainer {
     height: calc(100vh - 60px);
     background-color: rgb(204, 214, 218);
     display: flex;
     flex-direction: column;
 }
-
+.finishcontainer{
+    height: calc(80vh);
+    width: 100%;
+    background-color: rgb(204, 214, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.correctchar{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-right: 3px solid white;
+}
+.correct{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Gugi";
+    color: white;
+}
+.correctlabel{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: gurajada;
+}
+.wrongchar{
+    height: 300px;
+    width: 300px;
+    background-color:black;
+    color:white;
+    border-right: 3px solid white;
+}
+.wrong{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Gugi";
+}
+.wronglabel{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: gurajada;
+}
+.speed{
+    height: 300px;
+    width: 300px;
+    background-color:black;
+    font-size: 42px;
+}
+.speedkm{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Gugi";
+    color: white;
+}
+.speedlabel{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: gurajada;
+}
 .typenav {
     background-color: rgb(204, 214, 218);
     height: 80px;
@@ -77,10 +169,11 @@
     padding: 20px;
     letter-spacing: 2px;
     word-spacing: 14px;
-    font-size: 32px;
+    font-size: 36px;
     text-indent: 10px;
     overflow: scroll;
     color:black;
+    font-family: "comic neue";
 }
 .cursor{
     border-left: 4px solid black;
@@ -105,7 +198,7 @@
     width: 0;
 }
 .sucesscolor{
-    color:darkblue;
+    color:blue;
     font-weight: bolder;
 }
 .errorcolor{

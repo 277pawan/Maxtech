@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Typewriter.css";
 import restart from "../../Assets/restart.png";
-
+import confetti from "canvas-confetti";
 function Typewriter() {
   const array100 = [
-    "Virat Kohli and Nandre Burger are making headlines after South African pacers show on-field aggression to the former India captain in the ongoing Day 1 of India vs South Africa 1st Test at Newlands, Cape Town. Now a photo is going viral on social media where Nandre Burger was seen touching the feet of Virat Kohli and the post claiming that Burger apologized to Kohli after sledging him in the Test. However, India.com found that this is a morphed photo and nothing like that happened in the field.",
+    "Shreyas Kohli and Nandre Burger are making headlines after South African pacers show on-field aggression to the former India captain in the ongoing Day 1 of India vs South Africa 1st Test at Newlands, Cape Town. Now a photo is going viral on social media where Nandre Burger was seen touching the feet of Virat Kohli and the post claiming that Burger apologized to Kohli after sledging him in the Test. However, India.com found that this is a morphed photo and nothing like that happened in the field.",
     "ananya Kohli and Nandre Burger are making headlines after South African pacers show on-field aggression to the former India captain in the ongoing Day 1 of India vs South Africa 1st Test at Newlands, Cape Town. Now a photo is going viral on social media where Nandre Burger was seen touching the feet of Virat Kohli and the post claiming that Burger apologized to Kohli after sledging him in the Test. However, India.com found that this is a morphed photo and nothing like that happened in the field.",
     "priyanka Kohli and Nandre Burger are making headlines after South African pacers show on-field aggression to the former India captain in the ongoing Day 1 of India vs South Africa 1st Test at Newlands, Cape Town. Now a photo is going viral on social media where Nandre Burger was seen touching the feet of Virat Kohli and the post claiming that Burger apologized to Kohli after sledging him in the Test. However, India.com found that this is a morphed photo and nothing like that happened in the field.",
   ];
@@ -21,11 +21,14 @@ function Typewriter() {
   // const [currentIndex, setCurrentIndex] = useState(0);
   // const [inputText, setInputText] = useState("");
   const [value, setvalue] = useState(array10);
-  const [valuecopy, setvaluecopy] = useState(0);
+  const [valuecopy, setvaluecopy] = useState(1);
   const [match, setmatch] = useState([]);
   const [cursorpos, setcursorpos] = useState(0);
   const [contentpos, setcontentpos] = useState(0);
   const [isHovered, setishovered] = useState(false);
+  const [istrue, settrue] = useState(0);
+  const [isfalse, setfalse] = useState(0);
+  const [finish, setfinish] = useState(false);
   function handle10array() {
     setvalue(array10);
   }
@@ -75,12 +78,27 @@ function Typewriter() {
       const ans = e.key;
       console.log(match.length);
       const contentans = value[contentpos].charAt(match.length);
-      console.log(contentans);
       setcursorpos(match.length + 1);
+
       if (ans === contentans) {
         setmatch((prevMatch) => [...prevMatch, true]);
+        settrue(istrue + 1);
       } else {
         setmatch((prevMatch) => [...prevMatch, false]);
+        setfalse(isfalse + 1);
+      }
+
+      if (match.length >= valuecopy * 100) {
+        setvaluecopy(valuecopy + 1);
+      }
+
+      // Check if the user has finished typing the current content
+      if (match.length === value[contentpos].length - 1) {
+        setfinish(true);
+        console.log("Finished your content.");
+        setTimeout(() => {
+          confetti();
+        }, 1000);
       }
     };
 
@@ -89,42 +107,65 @@ function Typewriter() {
     return () => {
       window.removeEventListener("keypress", handleKeyPress);
     };
-  }, [match]);
+  }, [match, valuecopy, contentpos]);
   return (
     <div className="typecontainer">
-      <div className="typenav">
-        <div className="wordsbox1">Words</div>
-        <div className="wordsbox2" onClick={handle10array}>
-          10
-        </div>
-        <div className="wordsbox3" onClick={handle40array}>
-          40
-        </div>
-        <div className="wordsbox4" onClick={handle100array}>
-          100
-        </div>
-      </div>
-      <div className="typebox">
-        <div className="typespace">
-          <div className="typecontent">
-            {value[contentpos]
-              .split("")
-              .slice(0, value[contentpos].length)
-              .map((letter, index) => (
-                <React.Fragment key={index}>
-                  <span
-                    className={`${index === cursorpos ? "cursor" : ""}`}
-                  ></span>
-                  <span
-                    key={index}
-                    className={`${match[index] ? "sucesscolor" : "errorcolor"}`}
-                  >
-                    {letter}
-                  </span>
-                </React.Fragment>
-              ))}
+      {finish ? (
+        <>
+          <div className="finishcontainer">
+            <div className="correctchar">
+              <div className="correct">{istrue}</div>
+              <div className="correctlabel">Correct Character</div>
+            </div>
+            <div className="wrongchar">
+              {" "}
+              <div className="wrong">{isfalse}</div>
+              <div className="wronglabel">Wrong Character</div>
+            </div>
+            <div className="speed">
+              {" "}
+              <div className="speedkm">20</div>
+              <div className="speedlabel">Words/Minute</div>
+            </div>
           </div>
-          {/* <div>
+        </>
+      ) : (
+        <>
+          <div className="typenav">
+            <div className="wordsbox1">Words</div>
+            <div className="wordsbox2" onClick={handle10array}>
+              10
+            </div>
+            <div className="wordsbox3" onClick={handle40array}>
+              40
+            </div>
+            <div className="wordsbox4" onClick={handle100array}>
+              100
+            </div>
+          </div>
+          <div className="typebox">
+            <div className="typespace">
+              <div className="typecontent">
+                {value[contentpos]
+                  .split("")
+                  .slice(valuecopy * 100 - 100, valuecopy * 100)
+                  .map((letter, index) => (
+                    <React.Fragment key={index}>
+                      <span
+                        className={`${index === cursorpos ? "cursor" : ""}`}
+                      ></span>
+                      <span
+                        key={index}
+                        className={`${
+                          match[index] ? "sucesscolor" : "errorcolor"
+                        }`}
+                      >
+                        {letter}
+                      </span>
+                    </React.Fragment>
+                  ))}
+              </div>
+              {/* <div>
             <input
               type="text"
               value={value}
@@ -133,8 +174,10 @@ function Typewriter() {
               placeholder="Type Here..."
             ></input>
           </div> */}
-        </div>
-      </div>
+            </div>
+          </div>
+        </>
+      )}
       <div className="typebuttons">
         <img
           className="restartimg"
