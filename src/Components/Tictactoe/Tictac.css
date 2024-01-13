@@ -8,7 +8,7 @@
 }
 .tacbox{
     height: 302px;
-    width: 300px;
+    width: 306px;
     background-color: black;
     border: 3px solid black;
     display: flex;
@@ -16,23 +16,24 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 10px;
 }
 .tacrow1{
     height: 100px;
     width: 300px;
-    background-color: blueviolet;
+    background-color: orange;
     display: flex;
 }
 .tacrow2{
     height: 100px;
     width: 300px;
-    background-color:greenyellow;
+    background-color:red;
     display: flex;
 }
 .tacrow3{
     height: 100px;
     width: 300px;
-    background-color: blue;
+    background-color: orange;
     display: flex;
 }
 .restartimage{

@@ -1,19 +1,21 @@
 .tacfield{
     height: 100px;
     width: 100px;
-    background-color: rgb(235, 151, 151);
-    border: 2px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     font-size: 24px;
     font-weight: bolder;
+    border-radius: 10px;
 }
 .hovertext {
     visibility: hidden; /* initially hidden */
     font-size: 26px;
     opacity: 0.7;
+    color: black;
   }
   
   .tacfield:hover .hovertext {

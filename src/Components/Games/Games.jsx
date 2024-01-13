@@ -25,7 +25,9 @@ function Games() {
   return (
     <div className="gamescontainer">
       <div className="gamefirstbox">
-        <div className="gamefirsttitle">Game Haven</div>
+        <div className="gamefirsttitle">
+          Game<span style={{ color: "tomato" }}>Haven</span>
+        </div>
         <div className="gamefirstdesc">
           Your Ultimate destination for interactive games.
         </div>
