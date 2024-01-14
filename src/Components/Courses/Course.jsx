@@ -145,44 +145,46 @@ function Course() {
   return (
     <div className="coursecontainer">
       <div className="coursetitle">
-        Online <span style={{ color: "tomato" }}>Coaching Lessons </span>For
-        Remote Learnings.
+        Online <span style={{ color: "red" }}>Coaching Lessons </span>For Remote
+        Learnings.
       </div>
-      <div ref={websecureref} className="coursebox1">
-        <div className="courseimage1">
-          <img src={websecurity} alt="websecurity"></img>
+      <div className="courseallbox">
+        <div ref={websecureref} className="coursebox1">
+          <div className="courseimage1">
+            <img src={websecurity} alt="websecurity"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
-      </div>
-      <div ref={hardwareref} className="coursebox2">
-        <div className="courseimage2">
-          <img src={hardware} alt="hardware"></img>
+        <div ref={hardwareref} className="coursebox2">
+          <div className="courseimage2">
+            <img src={hardware} alt="hardware"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
-      </div>
-      <div ref={webdeveloperref} className="coursebox3">
-        <div className="courseimage3">
-          <img src={webdeveloper} alt="webdeveloper"></img>
+        <div ref={webdeveloperref} className="coursebox3">
+          <div className="courseimage3">
+            <img src={webdeveloper} alt="webdeveloper"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
-      </div>
-      <div ref={javaref} className="coursebox4">
-        <div className="courseimage4">
-          <img src={java} alt="java"></img>
+        <div ref={javaref} className="coursebox4">
+          <div className="courseimage4">
+            <img src={java} alt="java"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
-      </div>
-      <div ref={cref} className="coursebox5">
-        <div className="courseimage5">
-          <img src={c} alt="C++"></img>
+        <div ref={cref} className="coursebox5">
+          <div className="courseimage5">
+            <img src={c} alt="C++"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
-      </div>
-      <div ref={cybersecurityref} className="coursebox6">
-        <div className="courseimage6">
-          <img src={cybersecruity} alt="cybersecurity"></img>
+        <div ref={cybersecurityref} className="coursebox6">
+          <div className="courseimage6">
+            <img src={cybersecruity} alt="cybersecurity"></img>
+          </div>
+          <div className="webtitle">Web Security</div>
         </div>
-        <div className="webtitle">Web Security</div>
       </div>
     </div>
   );

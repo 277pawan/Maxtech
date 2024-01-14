@@ -15,7 +15,7 @@ import Tictac from './Components/Tictactoe/Tictac';
 import Typewriter from './Components/Typewriter/Typewriter';
 
 function App() {
-  const [landing, setlanding] = useState(true);
+  const [landing, setlanding] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => {
       setlanding(false);

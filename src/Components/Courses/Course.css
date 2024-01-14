@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Moul&family=PT+Serif&family=Roboto&family=Vollkorn&display=swap');
 .coursecontainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
-    padding: 10% 42px 100px 42px;
+    /* padding: 10% 42px 100px 42px; */
     position: relative;
 }
 .coursetitle{
-    position: absolute;
-    display: block;
-    top:0;
+    width: 100%;
+    text-align: center;
     font-family:auto;
     font-weight: 600;
     padding: 20px;
     margin-top: 2.5%;
     font-size: 2.8rem;
+}
+.courseallbox{
+    background-color: transparent;
 }
 .coursebox1{
     height: 250px;
