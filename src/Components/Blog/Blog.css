@@ -125,6 +125,13 @@
         text-transform: capitalize;
         font-weight: 600;
     }
+    .blogbox1 div span{
+        font-size: 40px;
+        font-family:auto;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: red;
+    }
     .blogbox2{
         height: 450px;
         width: 580px;

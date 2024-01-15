@@ -124,8 +124,7 @@
         height:auto;
         width: 100%;
         background-color: rgb(236, 236, 236);
-        padding-top: 3em;
-        padding-bottom: 3em;
+        padding-top: 1em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -133,15 +132,17 @@
         align-items: center;
     }
     .gamesecondbox1{
-        height: 400px;
+        height: 350px;
         width: 500px;
         background: url('../../Assets/typingimage.png');
         margin: 10px;
+        opacity: 1;
     }
     .gamesecondbox2{
-        height: 400px;
+        height: 350px;
         width: 500px;
         background-color: royalblue;
         margin: 10px;
+        opacity: 1;
     }
 }

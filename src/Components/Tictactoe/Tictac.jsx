@@ -10,6 +10,9 @@ function Tictac() {
   const [winnervalue, setwinnervalue] = useState();
   const [rotate, setrotate] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   function tooglehandle(index) {
     const updatedvalue = [...value];
     if (toogle) {

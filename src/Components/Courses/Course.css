@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 .coursebox1{
     height: 250px;
