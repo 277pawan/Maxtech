@@ -67,6 +67,7 @@
     font-size: 28px;
     font-weight: 600;
     font-family:"roboto";
+    text-align: center;
 }
 .coursebox2{
     height: 250px;
@@ -172,14 +173,11 @@
         flex-wrap: wrap;
         justify-content:space-evenly;
         align-items: center;
-        padding:35% 0px 0px 0px
     } 
     .coursetitle{
-        position: absolute;
         display: block;
         top:0;
         padding: 20px;
         font-size: 30px;
-        margin: 6%;
     }
 }

@@ -29,7 +29,7 @@
     font-family:cursive;
     text-transform: capitalize;
     font-weight: 600;
-    color: tomato;
+    color: red;
 }
 .blogbox2{
     height: 650px;
@@ -119,6 +119,12 @@
     font-size: 22px;
 }
 @media screen and (max-width:768px) {
+    .blogbox1 div{
+        font-size: 40px;
+        font-family:auto;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
     .blogbox2{
         height: 450px;
         width: 580px;
@@ -162,14 +168,14 @@
         font-size: 45px;
         color: white;
         font-weight: 600;
-        font-family: cursive;
+        font-family: auto;
         text-align: center;
         background-color: transparent;
         opacity: 1;
     }
     .blogbox3 div span{
         font-size: 26px;
-        font-family: cursive;
+        font-family: auto;
         text-transform: capitalize;
     }
     

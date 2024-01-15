@@ -81,6 +81,15 @@ color: white;
     /* object-fit:con; */
 }
 @media screen and (max-width:768px) {
+    .guidebox1title{
+        position: relative;
+        top:-5%;
+        font-size: 40px;
+        font-family: auto;
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+    }
     .guidebox1{
         height: 90vh;
         width:100%;

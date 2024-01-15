@@ -7,9 +7,10 @@
     flex-wrap: wrap;
     align-items:center; 
     justify-content: center;
+    padding: 50px 0px 50px 0px;
 }
 .subscribebox{
-height: 500px;
+height: auto;
 width: 100%;
 background-color: transparent;
 display: flex;
@@ -20,7 +21,7 @@ align-items: center;
 }
 .subscribetitle{
     font-size: 50px;
-    font-family: cursive;
+    font-family: auto;
     font-weight: 600;
     text-transform: capitalize;
     padding: 10px;
