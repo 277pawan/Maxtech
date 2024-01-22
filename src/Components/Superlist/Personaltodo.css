@@ -1,0 +1,80 @@
+.todocontainer{
+    height: auto;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.personaltodo{
+height: 80vh;
+width: 600px;
+background-color: aquamarine;
+margin: 10px;
+border-radius: 30px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.personalheading{
+    height: auto;
+    width: 100%;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.personaldesc{
+    height: auto;
+    width: 100%;
+    font-size: 24px;
+    font-family: cursive;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.personallist{
+    height: 560px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.personallist::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  .personallist::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Set the color of the thumb */
+    border-radius: 10px; /* Set the border radius of the thumb */
+  }
+  .labelfont{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .labelmark{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: line-through;
+    text-decoration-color: rgb(248, 79, 57);
+  }
+.todoimage{
+    height: 80vh;
+    width: 500px;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 30px;
+}
+.todoimage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.personallist input[type=checkbox]{
+    transform: scale(2.5);
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+.todoimage{
+    display: none;
+}
+}

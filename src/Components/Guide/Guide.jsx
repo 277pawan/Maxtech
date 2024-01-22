@@ -7,12 +7,12 @@ function Guide() {
   const guidecontainref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    const t1 = new gsap.timeline({
-      duration: 0.2,
+    const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: guidecontainref.current,
-        start: "top 550px",
-        end: "bottom 300px",
+        // markers: true,
+        start: "top 70%",
+        end: "bottom 0%",
         toggleActions: "play reverse play reverse",
       },
     });

@@ -13,7 +13,7 @@ function Header() {
   const headerrealbuttonref = useRef(null);
   useLayoutEffect(() => {
     gsap.registerPlugin(CSSRulePlugin);
-    let tl = new gsap.timeline();
+    let tl = gsap.timeline();
     tl.to(girlref.current, 1, { css: { top: "30%" } })
       .to(boyref.current, 1, { css: { top: "8%" } }, 0.2)
       .to(headerh1ref.current, 1, { opacity: 1, delay: 0.7 }, 0.4)

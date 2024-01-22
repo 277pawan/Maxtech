@@ -17,11 +17,9 @@ function Course() {
   const javaref = useRef(null);
   const cybersecurityref = useRef(null);
   useLayoutEffect(() => {
-    const t1 = new gsap.timeline({
-      duration: 1,
+    const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: websecureref.current,
-        toggleActions: "play", // Define the trigger behavior
       },
     });
     t1.from(
@@ -79,12 +77,10 @@ function Course() {
         0.6
       );
   }, []);
-  useLayoutEffect(() => {
-    const t2 = new gsap.timeline({
-      duration: 1,
+  useEffect(() => {
+    const t2 = gsap.timeline({
       scrollTrigger: {
         trigger: javaref.current,
-        toggleActions: "play",
       },
     });
     t2.from(

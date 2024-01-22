@@ -2,18 +2,15 @@ import React, { useEffect, useRef } from "react";
 import "./Subscribe.css";
 import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { CSSRulePlugin } from "gsap/all";
 function Subscribe() {
   const subscribetitleref = useRef(null);
   const subscribedescref = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(CSSRulePlugin);
-    const t1 = new gsap.timeline({
+    const t1 = gsap.timeline({
       duration: 1,
       scrollTrigger: {
         trigger: subscribetitleref.current,
-        toggleActions: "play",
       },
     });
     t1.staggerTo(

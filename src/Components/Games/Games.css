@@ -48,8 +48,8 @@
     background-size: cover;
     border-radius: 20px;
     opacity: 0;
-    transform:translateY(20%);
     display: flex;
+    transform: translateY(20%);
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -82,8 +82,8 @@
     background-size: cover;
     border-radius: 20px;
     opacity: 0;
-    transform:translateY(20%);
     display: flex;
+    transform: translateY(20%);
     flex-direction: column;
     justify-content:center;
     align-items: center;

@@ -6,18 +6,18 @@ function Games() {
   const firstbox = useRef(null);
   const secondbox = useRef(null);
   useEffect(() => {
-    let t1 = new gsap.timeline();
-    t1.to(firstbox.current, 1, {
+    let t1 = gsap.timeline();
+    t1.to(firstbox.current, 1.3, {
       opacity: 0.75,
-      transform: "translate(0%)",
+      transform: "translateY(0%)",
       delay: 0.2,
     }).to(
       secondbox.current,
       1,
       {
         opacity: 0.75,
-        transform: "translate(0%)",
-        delay: 0.3,
+        transform: "translateY(0%)",
+        delay: 0.33,
       },
       0.1
     );

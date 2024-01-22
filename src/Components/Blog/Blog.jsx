@@ -5,7 +5,6 @@ import blog3 from "../../Assets/blog3.jpg";
 import "./Blog.css";
 import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 function Blog() {
   const blogbox2ref = useRef(null);
   const blogbox3ref = useRef(null);
@@ -14,25 +13,21 @@ function Blog() {
   const blogbox3descref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    const t1 = new gsap.timeline({
-      duration: 1,
+    const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: blogbox4ref.current,
-        toggleActions: "play",
       },
     });
-    const t2 = new gsap.timeline({
+    const t2 = gsap.timeline({
       duration: 1,
       scrollTrigger: {
         trigger: blogbox2ref.current,
-        toggleActions: "play",
       },
     });
-    const t3 = new gsap.timeline({
+    const t3 = gsap.timeline({
       duration: 1,
       scrollTrigger: {
         trigger: blogbox3ref.current,
-        toggleActions: "play",
       },
     });
 
