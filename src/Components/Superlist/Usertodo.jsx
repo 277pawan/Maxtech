@@ -5,11 +5,14 @@ import plus from "../../Assets/plus.png";
 import usertodoimage from "../../Assets/todoadd.jpg";
 import deleteimage from "../../Assets/deleteimage.png";
 import tickimage from "../../Assets/tickimage.png";
+import boyim from "../../Assets/boy.jpg";
 import { gsap, Power2 } from "gsap";
 function Usertodo() {
   const [userdata, setuserdata] = useState([]);
   const [tempdata, settempdata] = useState("");
-  const [taskdata, settaskdata] = useState();
+  const [taskdata, settaskdata] = useState(true);
+  const [showBoyImage, setShowBoyImage] = useState(false);
+
   function Addfirstdata() {
     if (tempdata !== "") {
       setuserdata([...userdata, tempdata]);
@@ -27,12 +30,20 @@ function Usertodo() {
       settaskdata(true);
     } else {
       settaskdata(false);
+      setShowBoyImage(true);
     }
-    console.log(userdata);
   }, [tempdata]);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const t1 = gsap.timeline();
-    t1.to(".usertododatalist", { opacity: 1, duration: 1, delay: 2 });
+    t1.to(".usertododatalist", {
+      opacity: 1,
+      duration: 0.3,
+      ease: Power2.easeIn,
+    }).to(".usertodo1image", {
+      opacity: 1,
+      duration: 0.3,
+      ease: Power2.easeIn,
+    });
   }, [taskdata]);
   return (
     <div className="usertodocontainer">
@@ -153,7 +164,15 @@ function Usertodo() {
         </div>
       )}
       <div className="usertodoimage">
-        <img className="todoaddimage" src={usertodoimage} alt="todoimage"></img>
+        {showBoyImage ? (
+          <img className="usertodo1image" src={boyim} alt="boyim"></img>
+        ) : (
+          <img
+            className="todoaddimage"
+            src={usertodoimage}
+            alt="todoimage"
+          ></img>
+        )}{" "}
       </div>
     </div>
   );

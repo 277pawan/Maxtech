@@ -1,7 +1,7 @@
 .usertodocontainer{
     height: auto;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: #f3f2fa;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,14 +10,14 @@
 .usertododata{
     height: 620px;
     width: 600px;
-    background-color: aliceblue;
+    background-color: white;
     margin: 10px;
     border-radius: 30px;
 }
 .usertododatalist{
     height: 620px;
     width: 600px;
-    background-color: aliceblue;
+    background-color: white;
     margin: 10px;
     border-radius: 30px;
     opacity: 0;
@@ -47,7 +47,7 @@
 .usertodoimage{
     height: 620px;
     width: 450px;
-    background-color: orange;
+    background-color: #f3f2fa;
     margin: 10px;
     border-radius: 30px;
 }
@@ -56,6 +56,13 @@
     width: 100%;
     border-radius: 30px;
 }
+.usertodo1image{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    opacity: 0;
+}
+
 .helloimage{
     height: 200px;
     width: 200px;
@@ -77,6 +84,7 @@
     font-size: 30px;
     padding: 0px 36px 0px 10px;
     font-weight: bold;
+    background-color: #f3f2fa;
 }
 .usertodoinput
 {
@@ -95,6 +103,7 @@
     font-size: 30px;
     padding: 0px 40px 0px 10px;
     font-weight: bold;
+    background-color: #f3f2fa;
 }
 .usercheckbox{
     transform: scale(2.5);
