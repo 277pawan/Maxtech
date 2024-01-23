@@ -24,12 +24,14 @@ function Personaltodo() {
     const t2 = gsap.timeline();
     t1.to(".personaltodo", {
       transform: "translateX(0)",
-      duration: 1.2,
+      opacity: 1,
+      duration: 1,
       ease: Power2.easeInOut,
     });
     t2.to(".todoimage", {
       transform: "translateX(0)",
-      duration: 1.2,
+      opacity: 1,
+      duration: 1,
       ease: Power2.easeInOut,
     });
   }, []);

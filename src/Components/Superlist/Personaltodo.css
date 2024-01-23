@@ -16,7 +16,8 @@ border-radius: 30px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-transform: translateX(-50%);
+transform: translateX(-30%);
+opacity: 0;
 animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @keyframes shadow-drop-center {
@@ -75,7 +76,8 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
     background-color: aqua;
     margin: 10px;
     border-radius: 30px;
-    transform: translateX(50%);
+    transform: translateX(30%);
+    opacity: 0;
 }
 .todoimage img{
     height: 100%;
