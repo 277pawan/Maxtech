@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Superlist.css";
 import { gsap, Power2 } from "gsap";
 import lap1 from "../../Assets/todo1.gif";
@@ -9,9 +9,11 @@ import lap4 from "../../Assets/todo4.gif";
 import restart from "../../Assets/laptop.png";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Personaltodo from "./Personaltodo";
+import Usertodo from "./Usertodo";
 
 function Superlist() {
-  const superlist = useRef(null);
+  const [todoshift, settodoshift] = useState(true);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const start = gsap.timeline({
@@ -73,7 +75,12 @@ function Superlist() {
       ease: Power2.easeInOut,
     });
   }, []);
-
+  function handlepersonal() {
+    settodoshift(true);
+  }
+  function handlecreate() {
+    settodoshift(false);
+  }
   return (
     <div className="superlist">
       <div className="todo">
@@ -107,11 +114,15 @@ function Superlist() {
           </div>
         </div>
         <div className="todobox2">
-          <button className="personal">Personal Projects</button>
-          <button className="createtodo">Create your own todo</button>
+          <button className="personal" onClick={handlepersonal}>
+            Personal Projects
+          </button>
+          <button className="createtodo" onClick={handlecreate}>
+            Create your own todo
+          </button>
         </div>
         <div className="todobox3">
-          <Personaltodo />
+          {todoshift ? <Personaltodo /> : <Usertodo />}
         </div>
       </div>
       <div className="gallery">

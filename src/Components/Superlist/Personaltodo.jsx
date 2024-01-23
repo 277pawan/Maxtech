@@ -52,7 +52,10 @@ function Personaltodo() {
                 handlecheckbox("red");
               }}
             ></input>
-            <label className="labelfont" htmlFor="red">
+            <label
+              className={check.red ? "labelmark" : "labelfont"}
+              htmlFor="red"
+            >
               Learn Typescript
             </label>
           </div>
@@ -94,7 +97,10 @@ function Personaltodo() {
                 handlecheckbox("skyblue");
               }}
             ></input>
-            <label className="labelfont" htmlFor="skyblue">
+            <label
+              className={check.skyblue ? "labelmark" : "labelfont"}
+              htmlFor="skyblue"
+            >
               Figma Designer.
             </label>
           </div>
@@ -106,7 +112,10 @@ function Personaltodo() {
                 handlecheckbox("lightpink");
               }}
             ></input>
-            <label className="labelfont" htmlFor="lightpink">
+            <label
+              className={check.lightpink ? "labelmark" : "labelfont"}
+              htmlFor="lightpink"
+            >
               Read about System Design.
             </label>
           </div>
@@ -118,7 +127,10 @@ function Personaltodo() {
                 handlecheckbox("brown");
               }}
             ></input>
-            <label className="labelfont" htmlFor="brown">
+            <label
+              className={check.brown ? "labelmark" : "labelfont"}
+              htmlFor="brown"
+            >
               Learn about Golang.
             </label>
           </div>
@@ -130,7 +142,10 @@ function Personaltodo() {
                 handlecheckbox("tomato");
               }}
             ></input>
-            <label className="labelfont" htmlFor="tomato">
+            <label
+              className={check.tomato ? "labelmark" : "labelfont"}
+              htmlFor="tomato"
+            >
               React Query(Learn it).
             </label>
           </div>
