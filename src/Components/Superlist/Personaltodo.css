@@ -16,7 +16,20 @@ border-radius: 30px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+transform: translateX(-50%);
+animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+@keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
 .personalheading{
     height: auto;
     width: 100%;
@@ -62,6 +75,7 @@ flex-wrap: wrap;
     background-color: aqua;
     margin: 10px;
     border-radius: 30px;
+    transform: translateX(50%);
 }
 .todoimage img{
     height: 100%;

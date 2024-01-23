@@ -39,11 +39,15 @@ function Usertodo() {
       opacity: 1,
       duration: 0.3,
       ease: Power2.easeIn,
-    }).to(".usertodo1image", {
-      opacity: 1,
-      duration: 0.3,
-      ease: Power2.easeIn,
-    });
+    }).to(
+      ".usertodo1image",
+      {
+        opacity: 1,
+        duration: 0.3,
+        ease: Power2.easeIn,
+      },
+      0.01
+    );
   }, [taskdata]);
   return (
     <div className="usertodocontainer">
@@ -72,6 +76,7 @@ function Usertodo() {
               alignItems: "center",
               textAlign: "center",
               fontSize: "24px",
+              fontWeight: "bold",
             }}
           >
             Type your first todo task.

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import "./Personaltodo.css";
 import personalimage from "../../Assets/personalimage.webp";
+import { gsap, Power2 } from "gsap";
 function Personaltodo() {
   const [check, setcheck] = useState({
     yellow: true,
@@ -18,6 +19,20 @@ function Personaltodo() {
       [color]: !prevcheck[color],
     }));
   }
+  useLayoutEffect(() => {
+    const t1 = gsap.timeline();
+    const t2 = gsap.timeline();
+    t1.to(".personaltodo", {
+      transform: "translateX(0)",
+      duration: 1.2,
+      ease: Power2.easeInOut,
+    });
+    t2.to(".todoimage", {
+      transform: "translateX(0)",
+      duration: 1.2,
+      ease: Power2.easeInOut,
+    });
+  }, []);
 
   return (
     <div className="todocontainer">
