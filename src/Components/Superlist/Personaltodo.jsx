@@ -25,7 +25,7 @@ function Personaltodo() {
         <div className="personalheading">My Kitchen.</div>
         <div className="personaldesc">
           I'm putting this list together so we can get started organzing the
-          project. Excited that we're doing this.💖💖
+          project. Excited that we're doing this.💚💚
         </div>
         <div className="personallist">
           <div style={{ height: "auto", padding: "10px 0px 10px 0px" }}>

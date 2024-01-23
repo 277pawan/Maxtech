@@ -1,7 +1,7 @@
 .todocontainer{
     height: auto;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #f3f2fa;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -78,4 +78,30 @@ flex-wrap: wrap;
 .todoimage{
     display: none;
 }
+.personaltodo{
+    height: auto;
+    width: 600px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .personalheading{
+        height: auto;
+        width: 100%;
+        font-size: 45px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .personaldesc{
+        height: auto;
+        width: 100%;
+        font-size: 20px;
+        font-family: cursive;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    } 
 }

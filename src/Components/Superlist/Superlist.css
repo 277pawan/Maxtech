@@ -17,7 +17,7 @@
 .todobox1{
 	height: auto;
 	width: 100%;
-	background-color:rgb(255, 255, 255);
+	background-color:#f3f2fa;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -29,7 +29,7 @@
 	height: auto;
 	padding: 15px 0px 15px 0px;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
+	background-color:#f3f2fa;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
