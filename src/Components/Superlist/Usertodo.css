@@ -8,14 +8,14 @@
     justify-content:center;
 }
 .usertododata{
-    height: 800px;
+    height: 620px;
     width: 600px;
     background-color: aliceblue;
     margin: 10px;
     border-radius: 30px;
 }
 .usertododatalist{
-    height: 800px;
+    height: 620px;
     width: 600px;
     background-color: aliceblue;
     margin: 10px;
@@ -24,7 +24,7 @@
 }
 
 .userpersonallist{
-    height: 550px;
+    height: 400px;
     overflow-x: auto;
     overflow-y: auto;
     width: 100%;
@@ -37,7 +37,7 @@
     border-radius: 10px; /* Set the border radius of the thumb */
   }
   .deletesection{
-    height: 80px;
+    height: 55px;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -45,7 +45,7 @@
     align-items: center;
   }
 .usertodoimage{
-    height: auto;
+    height: 620px;
     width: 450px;
     background-color: orange;
     margin: 10px;

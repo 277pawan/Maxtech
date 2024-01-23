@@ -40,7 +40,7 @@ function Usertodo() {
         <div className="usertododata">
           <div
             style={{
-              height: "60vh",
+              height: "50vh",
               width: "100%",
               display: "flex",
               justifyContent: "center",
@@ -63,7 +63,7 @@ function Usertodo() {
               fontSize: "24px",
             }}
           >
-            Feel free to add notes or details of a tasks.
+            Type your first todo task.
           </div>
           <div className="todoinput">
             <input
@@ -127,7 +127,7 @@ function Usertodo() {
             ></input>
             <img
               style={{
-                height: "84px",
+                height: "85px",
                 width: "100px",
                 position: "relative",
                 left: "-26px",
