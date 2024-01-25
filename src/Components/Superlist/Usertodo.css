@@ -24,8 +24,7 @@
       -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
               box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
-  }
-  
+}  
 .usertododatalist{
     height: 620px;
     width: 600px;
@@ -35,7 +34,25 @@
     opacity: 0;
     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+.addplusfirsttodo{
+    height: 96px;
+    width: 100px;
+    position: relative;
+    right: 5%;
+    cursor: pointer;
+}
+.addplustodo{
+    height: 85px;
+    width: 100px;
+    position: relative;
+    right: 5%;
+    cursor: pointer;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 1s;
+  }
+  
 .userpersonallist{
     height: 400px;
     overflow-x: auto;
@@ -54,7 +71,7 @@
     width: 100%;
     background-color: transparent;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
 .usertodoimage{

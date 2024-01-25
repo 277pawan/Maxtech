@@ -14,6 +14,7 @@ import Games from './Components/Games/Games';
 import Tictac from './Components/Tictactoe/Tictac';
 import Typewriter from './Components/Typewriter/Typewriter';
 import Superlist from './Components/Superlist/Superlist';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   const [landing, setlanding] = useState(false);
@@ -42,6 +43,7 @@ function App() {
             <Route path='/Typewriter' element={<Typewriter />}></Route>
             <Route path='/Superlist' element={<Superlist />}></Route>
             <Route path='*' element={<Default />}></Route>
+            <Route path='/Contact' element={<Contact />}></Route>
           </Routes>
         </BrowserRouter>
         )}

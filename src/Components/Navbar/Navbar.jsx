@@ -9,7 +9,7 @@ function Navbar() {
           <Link to="/homepage">
             <li className="winimage">Image</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/Contact">
             <li className="wincontact">Contact</li>
           </Link>
           <Link to="/Superlist">

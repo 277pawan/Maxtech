@@ -12,18 +12,48 @@ function Usertodo() {
   const [tempdata, settempdata] = useState("");
   const [taskdata, settaskdata] = useState(true);
   const [showBoyImage, setShowBoyImage] = useState(false);
-
+  const [rotateAddTodo, setRotateAddTodo] = useState(false);
+  const [rotateAddFirstTodo, setRotateAddFirstTodo] = useState(false);
   function Addfirstdata() {
     if (tempdata !== "") {
-      setuserdata([...userdata, tempdata]);
+      const newdata = {
+        word: tempdata,
+        checked: false,
+      };
+      setuserdata((prevdata) => [...prevdata, newdata]);
       settempdata("");
+      setRotateAddFirstTodo(true);
+      setTimeout(() => {
+        setRotateAddFirstTodo(false);
+      }, 2000);
     }
   }
   function userinputhandle() {
     if (tempdata !== "") {
-      setuserdata([...userdata, tempdata]);
+      const newdata = {
+        word: tempdata,
+        checked: false,
+      };
+      setuserdata((prevdata) => [...prevdata, newdata]);
       settempdata("");
+      setRotateAddTodo(true);
+      setTimeout(() => {
+        setRotateAddTodo(false);
+      }, 2000);
     }
+  }
+  function handleCheckboxChange(index) {
+    // console.log("checked");
+    setuserdata((prevdata) => {
+      const updatestate = [...prevdata];
+      updatestate[index] = {
+        ...updatestate[index],
+        checked: !updatestate[index].checked,
+      };
+      return updatestate;
+    });
+    settaskdata(false);
+    console.log(userdata);
   }
   useEffect(() => {
     if (userdata.length === 0) {
@@ -89,13 +119,9 @@ function Usertodo() {
               type="text"
             ></input>
             <img
-              style={{
-                height: "100px",
-                width: "100px",
-                position: "relative",
-                left: "-20px",
-                cursor: "pointer",
-              }}
+              className={`addplusfirsttodo ${
+                rotateAddFirstTodo ? "rotate" : ""
+              }`}
               src={plus}
               alt="adduser"
               onClick={Addfirstdata}
@@ -121,15 +147,21 @@ function Usertodo() {
             {userdata.map((data, index) => (
               <div
                 key={index}
-                style={{ height: "auto", padding: "10px 0px 10px 0px" }}
+                style={{
+                  height: "auto",
+                  padding: "10px 0px 10px 0px",
+                  borderBottom: "inset",
+                }}
               >
                 <input
                   className="usercheckbox"
                   type="checkbox"
-                  style={{ fontSize: "30px" }}
+                  checked={data.checked}
+                  onClick={() => handleCheckboxChange(index)}
+                  style={{ fontSize: "25px" }}
                 ></input>
                 <label className="labelfont" htmlFor="yellow">
-                  {data}
+                  {data.word}
                 </label>
               </div>
             ))}
@@ -142,13 +174,7 @@ function Usertodo() {
               type="text"
             ></input>
             <img
-              style={{
-                height: "85px",
-                width: "100px",
-                position: "relative",
-                left: "-26px",
-                cursor: "pointer",
-              }}
+              className={`addplusfirsttodo ${rotateAddTodo ? "rotate" : ""}`}
               src={plus}
               alt="adduser"
               onClick={userinputhandle}
@@ -156,12 +182,12 @@ function Usertodo() {
           </div>
           <div className="deletesection">
             <img
-              style={{ height: "60px" }}
+              style={{ height: "55px", margin: "0px 20px 0px 20px" }}
               src={deleteimage}
               alt="deltebutton"
             ></img>
             <img
-              style={{ height: "60px" }}
+              style={{ height: "55px", margin: "0px 20px 0px 20px" }}
               src={tickimage}
               alt="Enterbutton"
             ></img>
