@@ -12,19 +12,9 @@ function Usertodo() {
   const [showBoyImage, setShowBoyImage] = useState(false);
   const [rotateAddTodo, setRotateAddTodo] = useState(false);
   const [rotateAddFirstTodo, setRotateAddFirstTodo] = useState(false);
-  function Addfirstdata() {
-    if (tempdata !== "") {
-      const newdata = {
-        word: tempdata,
-        checked: false,
-      };
-      setuserdata((prevdata) => [...prevdata, newdata]);
-      settempdata("");
-      setRotateAddFirstTodo(true);
-      setTimeout(() => {
-        setRotateAddFirstTodo(false);
-      }, 2000);
-    }
+  function createfirsttodo() {
+    settaskdata(false);
+    setShowBoyImage(true);
   }
   function userinputhandle() {
     if (tempdata !== "") {
@@ -53,14 +43,6 @@ function Usertodo() {
     settaskdata(false);
     console.log(userdata);
   }
-  useEffect(() => {
-    if (userdata.length === 0) {
-      settaskdata(true);
-    } else {
-      settaskdata(false);
-      setShowBoyImage(true);
-    }
-  }, [tempdata]);
   useEffect(() => {
     const t1 = gsap.timeline();
     t1.to(".usertododatalist", {
@@ -94,40 +76,18 @@ function Usertodo() {
           >
             <img className="helloimage" src={helloimage} alt="helloimage"></img>
           </div>
-          <div style={{ height: "30%" }}>
-            <button>Create your Todo</button>
-          </div>
-          {/* <div
+          <div
             style={{
-              height: "100px",
-              backgroundColor: "transparent",
+              height: "30%",
               display: "flex",
-              flexWrap: "wrap",
               justifyContent: "center",
               alignItems: "center",
-              textAlign: "center",
-              fontSize: "24px",
-              fontWeight: "bold",
             }}
           >
-            Type your first todo task.
+            <button className="createyourtodo" onClick={createfirsttodo}>
+              Create your Todo
+            </button>
           </div>
-          <div className="todoinput">
-            <input
-              className="todotext"
-              value={tempdata}
-              onChange={(e) => settempdata(e.target.value)}
-              type="text"
-            ></input>
-            <img
-              className={`addplusfirsttodo ${
-                rotateAddFirstTodo ? "rotate" : ""
-              }`}
-              src={plus}
-              alt="adduser"
-              onClick={Addfirstdata}
-            ></img>
-          </div> */}
         </div>
       ) : (
         <div className="usertododatalist">
@@ -168,12 +128,19 @@ function Usertodo() {
             ))}
           </div>
           <div className="usertodoinput">
-            <input
-              className="usertodotext"
-              value={tempdata}
-              onChange={(e) => settempdata(e.target.value)}
-              type="text"
-            ></input>
+            <div class="input-container">
+              <input
+                placeholder="Enter your todo"
+                className="input-field"
+                type="text"
+                value={tempdata}
+                onChange={(e) => settempdata(e.target.value)}
+              />
+              <label for="input-field" className="input-label">
+                Enter your todo
+              </label>
+              <span class="input-highlight"></span>
+            </div>
             <img
               className={`addplusfirsttodo ${rotateAddTodo ? "rotate" : ""}`}
               src={plus}

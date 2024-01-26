@@ -34,15 +34,70 @@
     opacity: 0;
     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.addplusfirsttodo{
-    height: 96px;
-    width: 100px;
+.input-field {
+    display: block;
+    width: 360px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+  }
+  .input-container {
     position: relative;
-    right: 5%;
+    margin: 20px;
+  }
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: rgb(248, 79, 57);
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 14px;
+    font-weight: bold;
+    color:  rgb(248, 79, 57);
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  
+.createyourtodo{
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: transform 0.5s;
     cursor: pointer;
 }
-.addplustodo{
-    height: 85px;
+.createyourtodo:hover{
+    color:   rgb(248, 79, 57);
+    border: solid   rgb(248, 79, 57);
+    transform: scale(1.04);
+}
+.addplusfirsttodo{
+    height: 96px;
     width: 100px;
     position: relative;
     right: 5%;
@@ -143,12 +198,31 @@
 }
 @media screen and (max-width:768px) {
     .usertododatalist{
-        height: 620px;
-        width: 600px;
+        height: 560px;
+        width: 400px;
         background-color: white;
         margin: 20px;
         border-radius: 30px;
         opacity: 0;
         animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+    .input-highlight {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background-color: rgb(248, 79, 57);
+        transition: all 0.3s ease;
+      }
+      .input-field {
+        display: block;
+        width: 240px;
+        padding: 10px;
+        font-size: 24px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        outline: none;
+        background-color: transparent;
+      }
 }
