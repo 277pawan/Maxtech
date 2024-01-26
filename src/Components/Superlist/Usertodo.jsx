@@ -3,8 +3,6 @@ import "./Usertodo.css";
 import helloimage from "../../Assets/hello.png";
 import plus from "../../Assets/plus.png";
 import usertodoimage from "../../Assets/todoadd.jpg";
-import deleteimage from "../../Assets/deleteimage.png";
-import tickimage from "../../Assets/tickimage.png";
 import boyim from "../../Assets/boy.jpg";
 import { gsap, Power2 } from "gsap";
 function Usertodo() {
@@ -85,7 +83,7 @@ function Usertodo() {
         <div className="usertododata">
           <div
             style={{
-              height: "50vh",
+              height: "37vh",
               width: "100%",
               display: "flex",
               justifyContent: "center",
@@ -178,18 +176,6 @@ function Usertodo() {
               src={plus}
               alt="adduser"
               onClick={userinputhandle}
-            ></img>
-          </div>
-          <div className="deletesection">
-            <img
-              style={{ height: "55px", margin: "0px 20px 0px 20px" }}
-              src={deleteimage}
-              alt="deltebutton"
-            ></img>
-            <img
-              style={{ height: "55px", margin: "0px 20px 0px 20px" }}
-              src={tickimage}
-              alt="Enterbutton"
             ></img>
           </div>
         </div>
