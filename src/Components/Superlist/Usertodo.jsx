@@ -83,7 +83,7 @@ function Usertodo() {
         <div className="usertododata">
           <div
             style={{
-              height: "37vh",
+              height: "70%",
               width: "100%",
               display: "flex",
               justifyContent: "center",
@@ -94,7 +94,10 @@ function Usertodo() {
           >
             <img className="helloimage" src={helloimage} alt="helloimage"></img>
           </div>
-          <div
+          <div style={{ height: "30%" }}>
+            <button>Create your Todo</button>
+          </div>
+          {/* <div
             style={{
               height: "100px",
               backgroundColor: "transparent",
@@ -124,7 +127,7 @@ function Usertodo() {
               alt="adduser"
               onClick={Addfirstdata}
             ></img>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div className="usertododatalist">
