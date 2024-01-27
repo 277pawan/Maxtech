@@ -107,8 +107,8 @@
     transform: scale(1.04);
 }
 .addplusfirsttodo{
-    height: 96px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     position: relative;
     right: 5%;
     cursor: pointer;
