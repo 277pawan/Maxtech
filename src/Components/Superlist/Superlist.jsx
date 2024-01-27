@@ -101,7 +101,7 @@ function Superlist() {
               textAlign: "center",
             }}
           >
-            all your✅<span style={{ color: "lightgreen" }}>List.</span>
+            all your📃<span style={{ color: "blue" }}>List.</span>
           </div>
         </div>
         <div className="todobox2">

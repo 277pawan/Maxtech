@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import "./Usertodo.css";
 import helloimage from "../../Assets/hello.png";
 import plus from "../../Assets/plus.png";
+import deleteimage from "../../Assets/deleteimage.png";
 import usertodoimage from "../../Assets/todoadd.jpg";
 import boyim from "../../Assets/boy.jpg";
 import { gsap, Power2 } from "gsap";
@@ -42,6 +43,13 @@ function Usertodo() {
     });
     settaskdata(false);
     console.log(userdata);
+  }
+  function deletetodo(index) {
+    setuserdata((prevdata) => {
+      const updatedata = [...prevdata];
+      updatedata.splice(index, 1);
+      return updatedata;
+    });
   }
   useEffect(() => {
     const t1 = gsap.timeline();
@@ -111,7 +119,7 @@ function Usertodo() {
                 style={{
                   height: "auto",
                   padding: "10px 0px 10px 0px",
-                  borderBottom: "inset",
+                  borderBottom: "2px inset gray",
                 }}
               >
                 <input
@@ -121,9 +129,24 @@ function Usertodo() {
                   onClick={() => handleCheckboxChange(index)}
                   style={{ fontSize: "25px" }}
                 ></input>
-                <label className="labelfont" htmlFor="yellow">
+                <label
+                  className={data.checked ? "labelmark" : "labelfont"}
+                  htmlFor="yellow"
+                >
                   {data.word}
                 </label>
+                <span style={{ float: "right" }}>
+                  <img
+                    style={{
+                      height: "35px",
+                      cursor: "pointer",
+                      animation: "deletetodo 1s infinite",
+                    }}
+                    src={deleteimage}
+                    alt="Delete"
+                    onClick={() => deletetodo(index)}
+                  ></img>
+                </span>
               </div>
             ))}
           </div>

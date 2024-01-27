@@ -68,7 +68,7 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
     font-size: 24px;
     font-weight: 600;
     text-decoration: line-through;
-    text-decoration-color: rgb(248, 79, 57);
+    text-decoration-color: red;
   }
 .todoimage{
     height: auto;
@@ -85,7 +85,7 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
     border-radius: 30px;
 }
 .personallist input[type=checkbox]{
-    transform: scale(2.5);
+    transform: scale(2);
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
@@ -120,4 +120,14 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
         text-align: center;
         padding: 10px 0px 10px 0px;
     } 
+    .labelfont{
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .labelmark{
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration: line-through;
+      text-decoration-color:blue;
+    }
 }
