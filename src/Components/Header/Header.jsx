@@ -18,7 +18,7 @@ function Header() {
       .to(boyref.current, 1, { css: { top: "8%" } }, 0.2)
       .to(headerh1ref.current, 1, { opacity: 1, delay: 0.7 }, 0.4)
       .to(headerdescref.current, 1, { css: { opacity: 1 } }, 1.6)
-      .to(headerrealbuttonref.current, 1, { css: { top: "0px" } }, 1.6);
+      .to(headerrealbuttonref.current, 0.5, { css: { top: "0px" } }, 1.6);
   }, []);
   return (
     <div className="headercontainer">
@@ -31,7 +31,9 @@ function Header() {
           Study with group of professionals Ultimate Theme for Online Tutoring &
           Distance Education Platforms
           <div ref={headerbuttonref} className="headerbutton">
-            <button ref={headerrealbuttonref}>Get Started</button>
+            <button className="headerstartbutton" ref={headerrealbuttonref}>
+              Get Started
+            </button>
           </div>
         </div>
       </div>

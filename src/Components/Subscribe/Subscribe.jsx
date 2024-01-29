@@ -41,7 +41,7 @@ function Subscribe() {
           at top of the peak.
         </div>
         <div className="subscribebutton">
-          <button>Eager to help</button>
+          <button className="subscribestartbutton">Eager to help</button>
         </div>
       </div>
     </div>

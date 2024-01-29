@@ -87,7 +87,7 @@ function Superlist() {
         <div className="todobox1">
           <div
             style={{
-              fontSize: "55px",
+              fontSize: "45px",
               fontWeight: "bolder",
               textAlign: "center",
             }}
@@ -96,7 +96,7 @@ function Superlist() {
           </div>
           <div
             style={{
-              fontSize: "55px",
+              fontSize: "45px",
               fontWeight: "bolder",
               textAlign: "center",
             }}

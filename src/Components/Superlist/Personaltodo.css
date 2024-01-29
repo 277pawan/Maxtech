@@ -34,7 +34,7 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 .personalheading{
     height: auto;
     width: 100%;
-    font-size: 50px;
+    font-size: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     text-align: center;
@@ -42,13 +42,13 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 .personaldesc{
     height: auto;
     width: 100%;
-    font-size: 24px;
+    font-size: 22px;
     font-family: cursive;
     text-align: center;
     padding: 10px 0px 10px 0px;
 }
 .personallist{
-    height: 500px;
+    height: 450px;
     overflow-x: auto;
     overflow-y: auto;
     width: 100%;

@@ -46,27 +46,51 @@
     text-transform: capitalize;
     opacity: 0;
 }
-.headerbutton button{
+.headerbutton{
+    padding: 10px 0px 10px 0px;
+}
+.headerstartbutton {
+    padding: 20px 30px 20px 30px;
     position: relative;
-    right: 3%;
-    top:100px;
-    font-weight: 600;
-    height: 70px;
-    width: 200px;
-    margin: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    background-color: black;
-    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out,border 0.5s ease-in-out;    
+    top:30px;
+    border: unset;
+    border-radius: 6px;
     color: white;
-}
-.headerbutton button:hover{
+    z-index: 1;
+    background: black;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 22px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+   }
+   
+   .headerstartbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
     background-color: white;
-    color:rgb(0, 0, 0);
-    border: 4px outset rgb(0, 0, 0);
-}
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .headerstartbutton:hover {
+    color: black;
+   }
+   
+   .headerstartbutton:hover::before {
+    width: 100%;
+   }
 .headerbox2 {
     flex: 1;
     min-width: 400px;

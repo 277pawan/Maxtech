@@ -1,38 +1,27 @@
 import React, { useEffect, useState } from "react";
+import "./Contact.css";
 
 function Contact() {
-  const [state, setstate] = useState([
-    { work: "Simran", checked: false },
-    { work: "pawan", checked: false },
-    { work: "Shivani", checked: false },
-    { work: "Sweety", checked: false },
-  ]);
+  const [contact, setContact] = useState(false);
 
-  function handleCheckboxChange(index) {
-    setstate((prevdata) => {
-      const updateddata = [...prevdata];
-      updateddata[index] = {
-        ...updateddata[index],
-        checked: !updateddata[index].checked,
-      };
-      return updateddata;
-    });
+  function contactButton() {
+    setContact(!contact);
   }
 
-  useEffect(() => {
-    console.log(state);
-  }, [state]);
-
   return (
-    <div>
-      {state.map((data, index) => (
-        <div key={index}>
-          <div onClick={() => handleCheckboxChange(index)}>
-            {data.work} and{" "}
-            <span>{data.checked ? "Checked" : "Unchecked"}</span>
+    <div className="contactcontainer">
+      <div className={`contactbox ${contact ? "expanded" : ""}`}>
+        Explore more list inside this button{" "}
+        <button onClick={contactButton}>➕</button>
+        {contact ? (
+          <div className="additional-content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+            temporibus adipisci ab molestiae voluptatum optio doloribus, quam
+            maxime consectetur expedita perspiciatis, labore possimus velit!
+            Molestiae eaque accusantium non cumque? Iure.
           </div>
-        </div>
-      ))}
+        ) : null}
+      </div>
     </div>
   );
 }

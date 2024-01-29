@@ -20,8 +20,8 @@ justify-content: center;
 align-items: center;
 }
 .subscribetitle{
-    font-size: 50px;
-    font-family: auto;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: capitalize;
     padding: 10px;
@@ -39,27 +39,42 @@ align-items: center;
     opacity: 0;
     transform: translateY(30px);
 }
-.subscribebutton button{
-    height: 70px;
-    width: auto;
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: capitalize;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-.subscribebutton button:hover{
-    height: 70px;
+.subscribestartbutton {
+    padding: 20px;
+    border: unset;
+    border-radius: 6px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
     cursor: pointer;
-    background-color: black;
-    color: white;
-    width: auto;
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
+   }
+   
+   .subscribestartbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .subscribestartbutton:hover {
+    color: #e8e8e8;
+   }
+   
+   .subscribestartbutton:hover::before {
+    width: 100%;
+   }

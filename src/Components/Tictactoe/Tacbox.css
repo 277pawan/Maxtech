@@ -9,7 +9,7 @@
     color: black;
     font-size: 24px;
     font-weight: bolder;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .hovertext {
     visibility: hidden; /* initially hidden */

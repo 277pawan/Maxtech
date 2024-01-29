@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Gugi&family=Gurajada&display=swap');
 .typecontainer {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
     background-color: rgb(204, 214, 218);
     display: flex;
     flex-direction: column;
@@ -235,22 +235,6 @@
     width: 80px;
     cursor: pointer;
     
-}
-.hover-box{
-    height: 50px;
-    width:auto;
-    padding: 10px;
-    font-size: 24px;
-    font-weight: 600;
-    background-color:transparent;
-    color: white;
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 26%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
 }
 .changecontent{
     height: 80px;

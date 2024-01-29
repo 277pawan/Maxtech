@@ -227,11 +227,6 @@ function Typewriter() {
             onMouseEnter={() => setishovered(true)}
             onMouseLeave={() => setishovered(false)}
           ></img>
-          {isHovered && (
-            <div className="hover-box">
-              <p>Restart Button </p>
-            </div>
-          )}
         </div>
       </div>
       <div className="mobilecontainer">Mobile Version comming soon.</div>
