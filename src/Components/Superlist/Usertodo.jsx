@@ -137,11 +137,7 @@ function Usertodo() {
                 </label>
                 <span style={{ float: "right" }}>
                   <img
-                    style={{
-                      height: "35px",
-                      cursor: "pointer",
-                      animation: "deletetodo 1s infinite",
-                    }}
+                    className="deletetodo"
                     src={deleteimage}
                     alt="Delete"
                     onClick={() => deletetodo(index)}

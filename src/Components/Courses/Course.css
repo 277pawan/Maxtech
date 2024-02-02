@@ -23,7 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
 }
 .coursebox1{
     height: 250px;
@@ -64,9 +64,9 @@
     width: 130px;
 }
 .webtitle{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
-    font-family:"roboto";
+    font-family:arial, sans-serif;
     text-align: center;
 }
 .coursebox2{

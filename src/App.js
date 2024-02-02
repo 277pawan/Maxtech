@@ -15,6 +15,7 @@ import Tictac from './Components/Tictactoe/Tictac';
 import Typewriter from './Components/Typewriter/Typewriter';
 import Superlist from './Components/Superlist/Superlist';
 import Contact from './Components/Contact/Contact';
+import Login from './Components/Login/Login';
 
 function App() {
   const [landing, setlanding] = useState(false);
@@ -42,6 +43,7 @@ function App() {
             <Route path='/Tictac' element={<Tictac />}></Route>
             <Route path='/Typewriter' element={<Typewriter />}></Route>
             <Route path='/Superlist' element={<Superlist />}></Route>
+            <Route path='/Login' element={<Login />}></Route>
             <Route path='*' element={<Default />}></Route>
             <Route path='/Contact' element={<Contact />}></Route>
           </Routes>

@@ -12,6 +12,7 @@
 .subscribebox{
 height: auto;
 width: 100%;
+padding: 40px;
 background-color: transparent;
 display: flex;
 flex-direction: column;

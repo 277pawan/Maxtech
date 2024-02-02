@@ -82,9 +82,16 @@
   .input-field:focus + .input-label + .input-highlight {
     width: 100%;
   }
+  .deletetodo{
+    height: 35px;
+    cursor: pointer;
+  }
+  .deletetodo:hover{
+    animation: deletetodo 1s infinite;
+  }
 @keyframes deletetodo {
   0%,100%{
-    transform:translateY(-5%);
+    transform:translateY(-10%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50%{
@@ -94,7 +101,7 @@
 }
 .createyourtodo{
     padding: 15px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     border-radius: 12px;
     border: 2px outset blue;
@@ -103,8 +110,7 @@
 }
 .createyourtodo:hover{
     color:blue;
-    border: solid blue;
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 .addplusfirsttodo{
     height: 80px;
@@ -195,7 +201,7 @@
     width: 80%;
     position: relative;
     right: -26px;
-    font-size: 30px;
+    font-size: 24px;
     padding: 0px 40px 0px 10px;
     font-weight: bold;
     background-color: #f3f2fa;
@@ -215,6 +221,9 @@
         border-radius: 30px;
         opacity: 0;
         animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .usertodoimage{
+      display: none;
     }
     .input-highlight {
         position: absolute;
@@ -236,13 +245,23 @@
         background-color: transparent;
       }
       .labelfont{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
       }
       .labelmark{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         text-decoration: line-through;
         text-decoration-color:blue;
       }
+      .usercheckbox{
+        transform: scale(1.5);
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .deletetodo{
+      height: 30px;
+      cursor: pointer;
+    }
 }

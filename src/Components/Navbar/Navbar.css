@@ -11,11 +11,19 @@ ul{
     float: right;
     font-size: 20px;
     color: white;
-    padding: 16px 16px 15px 16px;
+    padding: 14px 16px 14px 16px;
     cursor: pointer;
 }
+.loginbutton{
+    height: 24px;
+    background-color:rgb(91, 91, 255);
+    margin-right: 2px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
 .winimage:hover{
-    color: tomato;
+    color: rgb(219, 219, 235);
 }
 .wincontact:hover{
     color: tomato;

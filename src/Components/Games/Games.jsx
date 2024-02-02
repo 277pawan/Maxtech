@@ -8,14 +8,14 @@ function Games() {
   useEffect(() => {
     let t1 = gsap.timeline();
     t1.to(firstbox.current, 1.3, {
-      opacity: 0.75,
+      opacity: 0.9,
       transform: "translateY(0%)",
       delay: 0.2,
     }).to(
       secondbox.current,
       1,
       {
-        opacity: 0.75,
+        opacity: 0.9,
         transform: "translateY(0%)",
         delay: 0.33,
       },

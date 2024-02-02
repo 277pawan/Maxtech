@@ -18,62 +18,68 @@ function Superlist() {
     gsap.registerPlugin(ScrollTrigger);
     const start = gsap.timeline({
       scrollTrigger: {
-        trigger: ".wrapper1",
-        start: "top 25%",
+        trigger: ".details1",
+        start: "top 60%",
         end: "bottom 50%",
+        // markers: true,
         toggleActions: "play reverse play reverse",
       },
     });
-    start.to(".lap1", {
-      opacity: "1",
-      duration: 2,
-      transform: "scale(1)",
+    start.to(".gallery", {
+      backgroundColor: "#ffbcbc",
+      duration: 1,
+      opacity: 1,
       ease: Power2.easeInOut,
     });
     const t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".wrapper2",
-        start: "top 25%",
+        trigger: ".details2",
+        start: "top 70%",
         end: "bottom 50%",
         toggleActions: "play reverse play reverse",
       },
     });
-    t1.to(".lap2", {
-      opacity: "1",
-      duration: 2,
-      transform: "scale(1)",
+    t1.to(".second", {
+      opacity: 1,
+      duration: 1,
       ease: Power2.easeInOut,
     });
     const t2 = gsap.timeline({
       scrollTrigger: {
         // markers: true,
-        trigger: ".wrapper3",
-        start: "top 25%",
+        trigger: ".details3",
+        start: "top 60%",
         end: "bottom 50%",
         toggleActions: "play reverse play reverse",
       },
     });
-    t2.to(".lap3", {
-      opacity: "1",
-      duration: 2,
-      transform: "scale(1)",
+    t2.to(".gallery", {
+      backgroundColor: "#ebbff7",
+      duration: 1,
       ease: Power2.easeInOut,
-    });
-    const t3 = gsap.timeline({
-      scrollTrigger: {
-        // markers: true,
-        trigger: ".wrapperlast",
-        start: "top 25%",
-        end: "bottom 50%",
-        toggleActions: "play reverse play reverse",
+    }).to(
+      ".third",
+      {
+        opacity: 1,
+        duration: 1,
       },
-    });
-    t3.to(".lap4", {
-      opacity: "1",
-      duration: 2,
-      transform: "scale(1)",
-      ease: Power2.easeInOut,
-    });
+      0.1
+    );
+    // const t3 = gsap.timeline({
+    //   scrollTrigger: {
+    //     // markers: true,
+    //     trigger: ".wrapperlast",
+    //     start: "top 25%",
+    //     end: "bottom 50%",
+    //     toggleActions: "play reverse play reverse",
+    //   },
+    // });
+    // t3.to(".lap4", {
+    //   opacity: "1",
+    //   duration: 2,
+    //   transform: "scale(1)",
+    //   ease: Power2.easeInOut,
+    // });
   }, []);
   function handlepersonal() {
     settodoshift(true);
@@ -116,46 +122,39 @@ function Superlist() {
           {todoshift ? <Personaltodo /> : <Usertodo />}
         </div>
       </div>
-      <div className="gallery">
-        <div className="leftbox">
-          <div className="wrapper1">
-            <div className="heading"> Integrated</div>
-            <div className="text">With Apps</div>
-            <div className="text">you love.</div>
-          </div>
-          <div className="wrapper2">
-            {" "}
-            <div className="heading"> Work &</div>
-            <div className="text">Personal</div>
-            <div className="text">at the flip</div>
-            <div className="text">of a switch.</div>
-          </div>
-          <div className="wrapper3">
-            {" "}
-            <div className="heading">Perfect for</div>
-            <div className="text">teams and</div>
-            <div className="text">solo user.</div>
-          </div>
-          <div className="wrapperlast">
-            {" "}
-            <div className="heading">Task Notes</div>
-            <div className="text">and everything</div>
-            <div className="text">in between.</div>
+      <div class="gallery">
+        <div class="left">
+          <div class="detailsWrapper">
+            <div class="details1">
+              <div class="headline">Integrated</div>
+              <div class="text">with apps</div>
+              <div class="text">
+                you <span style={{ color: "red" }}>Love.</span>
+              </div>
+            </div>
+
+            <div class="details2">
+              <div class="headline">Private</div>
+              <div class="text">until you</div>
+              <div class="text">
+                are <span style={{ color: "green" }}>ready.</span>
+              </div>
+            </div>
+
+            <div class="details3">
+              <div class="headline">Work & Personal</div>
+              <div class="text">at the flip</div>
+              <div class="text">
+                of a <span style={{ color: "purple" }}>ready.</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="rightbox">
-          <div className="wrapper4">
-            <img className="lap1" alt="lap1" src={lap1}></img>
-          </div>
-          <div className="wrapper5">
-            <img className="lap2" src={lap2}></img>
-          </div>
-          <div className="wrapper6">
-            <img className="lap3" src={lap3}></img>
-          </div>
-          <div className="wrapperlastright">
-            <img className="lap4" src={lap4}></img>
-          </div>
+
+        <div class="right">
+          <div class="photos first"></div>
+          <div class="photos second"></div>
+          <div class="photos third"></div>
         </div>
       </div>
     </div>

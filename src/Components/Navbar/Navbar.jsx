@@ -6,8 +6,8 @@ function Navbar() {
     <>
       <div className="navbarcontainer">
         <ul>
-          <Link to="/homepage">
-            <li className="winimage">Image</li>
+          <Link to="/Login">
+            <li className="winimage loginbutton">Login</li>
           </Link>
           <Link to="/Contact">
             <li className="wincontact">Contact</li>
@@ -18,19 +18,21 @@ function Navbar() {
           <Link to="/Games">
             <li className="winpages">Games</li>
           </Link>
-          <Link to="home">
+          <Link to="/">
             <li className="winhome">Home</li>
           </Link>
-          <li
-            style={{
-              float: "left",
-              fontSize: "30px",
-              padding: "9px 10px 9px 9px",
-              fontWeight: "600",
-            }}
-          >
-            Maxtech
-          </li>
+          <Link to="/">
+            <li
+              style={{
+                float: "left",
+                fontSize: "30px",
+                padding: "9px 10px 9px 9px",
+                fontWeight: "600",
+              }}
+            >
+              Maxtech
+            </li>
+          </Link>
         </ul>
       </div>
     </>

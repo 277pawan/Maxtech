@@ -130,4 +130,10 @@ animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
       text-decoration: line-through;
       text-decoration-color:blue;
     }
+    .personallist input[type=checkbox]{
+      transform: scale(1.5);
+      margin-left: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
 }
