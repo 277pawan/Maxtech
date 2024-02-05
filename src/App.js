@@ -18,7 +18,7 @@ import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
 
 function App() {
-  const [landing, setlanding] = useState(false);
+  const [landing, setlanding] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setlanding(false);
